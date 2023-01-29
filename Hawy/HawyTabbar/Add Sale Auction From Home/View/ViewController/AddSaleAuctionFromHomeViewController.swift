@@ -58,7 +58,7 @@ class AddSaleAuctionFromHomeViewController: BaseViewViewController, BottomPopupD
     
     lazy var label4: PaddedLabel = {
         let label = PaddedLabel()
-        label.text = "Initial price".localized
+        label.text = "Init price".localized
         label.backgroundColor = DesignSystem.Colors.SecondBackground.color
         label.textColor = UIColor.lightGray
         label.textAlignment = .center

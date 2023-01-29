@@ -106,6 +106,9 @@
 "Looks like you won't win the auction" = "Looks like you won't win the auction";
 "The minimum increase is 50 dinars" = "The minimum increase is 50 dinars";
 "The minimum increase is 10 dinars" = "The minimum increase is 10 dinars";
+"The minimum increase is 50 USD" = "The minimum increase is 50 USD";
+"The minimum increase is 10 USD" = "The minimum increase is 10 USD";
+
 "You want to accept offer?" = "You want to accept offer?";
 "Offer accepted" = "Offer accepted";
 "Offer rejected" = "Offer rejected";
@@ -133,7 +136,7 @@
 "Auction address" = "Auction address";
 "Auction date" = "Auction date";
 "Auction time" = "Auction time";
-"Initial price" = "Initial price";
+"Init price" = "Initial price";
 
 "Please, Enter your auction name" = "Please, Enter your auction name";
 "Please, Enter your auction date" = "Please, Enter your auction date";
@@ -190,3 +193,4 @@
 "Please, select category first" = "Please, select category first";
 
 "Waiting For Conductor" = "Waiting For Conductor";
+"The bidding switched to this card by the admin" = "The bidding switched to this card by the admin";

@@ -157,12 +157,20 @@ extension AuctionLiveVideo : PusherDelegate {
             }
             //self.getJoindData(id: self.card_id, userId: HelperConstant.getUserId())
             
-            if decoded?.video_status == false {
-                self.remoteVideoMutedIndicator.isHidden = false
+            if self.iamConductor {
+                
             }else{
-                self.remoteVideoMutedIndicator.isHidden = true
+                if decoded?.video_status == false {
+                    self.remoteVideoMutedIndicator.isHidden = false
+                    self.remoteView.isHidden = false
+                }else{
+                    self.remoteVideoMutedIndicator.isHidden = true
+                    self.remoteView.isHidden = false
+                }
+                self.getParticipants(id: auction_id)
             }
-            self.getParticipants(id: auction_id)
+            
+       
             
         })
         
@@ -439,6 +447,11 @@ extension AuctionLiveVideo : PusherDelegate {
                 print("Could not decode message")
                 return
             }
+
+//            if self.cardID != decoded?.data?.offer?.cardID {
+//                ToastManager.shared.showError(message:  "The bidding switched to this card by the admin".localized , view: self.view)
+//
+//            }
             
             self.cardID = decoded?.data?.offer?.cardID
             self.getCardUpdate(id: self.auctionID)
@@ -580,13 +593,10 @@ extension AuctionLiveVideo : PusherDelegate {
                    
                    if card.selectorStatus == true {
                        
-                       self.priceLabel.text = "\(card.offer?.price ?? "0.0")"
-                       print(card.offer?.price ?? "0.0")
-                       
-                       self.ownerUserImage.isHidden = true
-                       self.ownerNameLabel.text = "Initial price".localized
-                       
-                       self.bidMaxPrice = card.bidMaxPrice
+                       self.priceLabel.text = "\(card.bidMaxPrice ?? "0.0")"
+                       self.ownerUserImage.isHidden = false
+                       self.ownerUserImage.loadImage(URLS.baseImageURL+(card.offer?.user?.image ?? ""))
+                       self.ownerNameLabel.text = "Init price".localized
                        
                    }
                    
@@ -598,14 +608,27 @@ extension AuctionLiveVideo : PusherDelegate {
                    
                    if card.selectorStatus == true {
                        
-                       self.priceLabel.text = "\(card.offer?.price ?? "0.0")"
-                       print(card.offer?.price ?? "0.0")
-                       
-                       self.ownerUserImage.isHidden = false
-                       self.ownerUserImage.loadImage(URLS.baseImageURL+(card.offer?.user?.image ?? ""))
-                       self.ownerNameLabel.text = card.offer?.user?.name ?? ""
-                       
-                       self.bidMaxPrice = card.bidMaxPrice
+                       if card.offer == nil {
+                           self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
+                           print(card.offer?.price ?? "0.0")
+                           
+                           self.ownerUserImage.isHidden = false
+                           self.ownerUserImage.loadImage(URLS.baseImageURL+(card.owner?.image ?? ""))
+                           self.ownerNameLabel.text = "Init Price".localized
+                           
+                           self.bidMaxPrice = card.bidMaxPrice
+                           self.cardID = card.id
+                       }else{
+                           self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
+                           print(card.offer?.price ?? "0.0")
+                           
+                           self.ownerUserImage.isHidden = false
+                           self.ownerUserImage.loadImage(URLS.baseImageURL+(card.offer?.user?.image ?? ""))
+                           self.ownerNameLabel.text = card.offer?.user?.name ?? ""
+                           
+                           self.bidMaxPrice = card.bidMaxPrice
+                           self.cardID = card.id
+                       }
                        
                    }
                    
@@ -708,16 +731,26 @@ extension AuctionLiveVideo : PusherDelegate {
                 
                 for card in data.data?.cards ?? [] {
                     
-                    if card.selectorStatus == true {
-                        
-                        self.priceLabel.text = "\(card.offer?.price ?? "0.0")"
+                    if card.offer == nil {
+                        self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
                         print(card.offer?.price ?? "0.0")
                         
-                        self.ownerUserImage.isHidden = true
-                        self.ownerNameLabel.text = "Initial price".localized
+                        self.ownerUserImage.isHidden = false
+                        self.ownerUserImage.loadImage(URLS.baseImageURL+(card.owner?.image ?? ""))
+                        self.ownerNameLabel.text = "Init Price".localized
                         
                         self.bidMaxPrice = card.bidMaxPrice
+                        self.cardID = card.id
+                    }else{
+                        self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
+                        print(card.offer?.price ?? "0.0")
                         
+                        self.ownerUserImage.isHidden = false
+                        self.ownerUserImage.loadImage(URLS.baseImageURL+(card.offer?.user?.image ?? ""))
+                        self.ownerNameLabel.text = card.offer?.user?.name ?? ""
+                        
+                        self.bidMaxPrice = card.bidMaxPrice
+                        self.cardID = card.id
                     }
                     
                 }

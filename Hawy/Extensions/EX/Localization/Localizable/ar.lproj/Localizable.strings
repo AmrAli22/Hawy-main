@@ -106,6 +106,9 @@
 "Looks like you won't win the auction" = "يبدو انك لا تفوز بالمزاد";
 "The minimum increase is 50 dinars" = "الحد الادني للزياده ٥٠ دينار";
 "The minimum increase is 10 dinars" = "الحد الادني للزياده ١٠ دينار";
+"The minimum increase is 50 USD" = "الحد الأدنى للزيادة هو 50 USD";
+"The minimum increase is 10 USD" = "الحد الأدنى للزيادة هو 10 USD";
+
 "You want to accept offer?" = "هل تريد ان تقبل العرض ؟";
 "Offer Accepted" = "تم قبول العرض";
 "Offer Rejected" = "تم رفض العرض";
@@ -134,7 +137,7 @@
 "Auction address" = "عنوان المزاد";
 "Auction date" = "تاريخ المزاد";
 "Auction time" = "توقيت بدايه المزاد";
-"Initial price" = "السعر الافتتاحي";
+"Init price" = "السعر الافتتاحي";
 
 "Please, Enter your auction name" = "من فضلك ادخل عنوان المزاد";
 "Please, Enter your auction date" = "من فضلك ادخل تاريخ المزاد";
@@ -191,3 +194,5 @@
 "Please, select category first" = "من فضلك اختر القسم اولا";
 
 "Waiting For Conductor" = "في انتظار مدلل";
+"The bidding switched to this card by the admin" = "تم تبديل المزايدة لهذا الكارت بواسطة الأدمن";
+

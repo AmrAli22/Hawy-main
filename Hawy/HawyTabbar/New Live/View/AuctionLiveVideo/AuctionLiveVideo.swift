@@ -103,13 +103,13 @@ class AuctionLiveVideo: BaseViewViewController {
         didSet {
             if VideoStatues {
                // videoStatus(status: "on")
-                videoMuteButton.setImage(UIImage(named: "videoMuteButton"), for: .normal)
+                videoMuteButton.setImage(UIImage(named: "videoMuteButtonSelected"), for: .normal)
                 remoteView.isHidden = false
                 remoteVideoMutedIndicator.isHidden = true
                 agoraEngine.muteLocalVideoStream(false)
             }else {
                // videoStatus(status: "off")
-                videoMuteButton.setImage(UIImage(named: "videoMuteButtonSelected"), for: .normal)
+                videoMuteButton.setImage(UIImage(named: "videoMuteButton"), for: .normal)
                 remoteView.isHidden = true
                 remoteVideoMutedIndicator.isHidden = false
                 agoraEngine.muteLocalVideoStream(true)
@@ -151,11 +151,16 @@ class AuctionLiveVideo: BaseViewViewController {
     
     // Tutorial Step 1
     var auctionID: Int?
+    var cardCounter = 0
     var cardID : Int? {
         didSet{
             
             if iamConductor {
                 self.listenToRaiseHandCall(auction_id: self.auctionID, card_id: self.cardID)
+            }else{
+                if cardCounter != 0{
+                    ToastManager.shared.showError(message:  "The bidding switched to this card by the admin".localized , view: self.view)
+                }
             }
             self.listenToChangesFromPusherTime(auction_id: self.auctionID, card_id: self.cardID)
             if HelperConstant.getCurrency() == "USD" {
@@ -165,6 +170,7 @@ class AuctionLiveVideo: BaseViewViewController {
             }
             self.listenToOutVideoCall(auction_id: self.auctionID, card_id: self.cardID)
             self.listenToMicCall(auction_id: self.auctionID, card_id: self.cardID)
+            cardCounter += 1
             
         }
     }
@@ -311,11 +317,20 @@ extension AuctionLiveVideo {
     
     @IBAction func plusButtonAction(_ sender: Any) {
         if Double(self.bidMaxPrice ?? "0.0") ?? 0.0 >= 1000.0 {
-            plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+            if HelperConstant.getCurrency() == "K.D" {
+                plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+            }else{
+                plusMinusDescLabel.text = "The minimum increase is 50 USD".localized
+            }
+            
             let plus = (Int(bidLabel.text ?? "") ?? 0) + 50
             bidLabel.text = "\(plus)"
         }else {
-            plusMinusDescLabel.text = "The minimum increase is 10 dinars".localized
+            if HelperConstant.getCurrency() == "K.D" {
+                plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+            }else{
+                plusMinusDescLabel.text = "The minimum increase is 50 USD".localized
+            }
             let plus = (Int(bidLabel.text ?? "") ?? 0) + 10
             bidLabel.text = "\(plus)"
         }
@@ -325,11 +340,19 @@ extension AuctionLiveVideo {
         if (Int(bidLabel.text ?? "") ?? 0) <= 10 { //plus <= 0
         }else {
             if Double(self.bidMaxPrice ?? "0.0") ?? 0.0 >= 1000.0 {
-                plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+                if HelperConstant.getCurrency() == "K.D" {
+                    plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+                }else{
+                    plusMinusDescLabel.text = "The minimum increase is 50 USD".localized
+                }
                 let plus = (Int(bidLabel.text ?? "") ?? 0) - 50
                 bidLabel.text = "\(plus)"
             }else {
-                plusMinusDescLabel.text = "The minimum increase is 10 dinars".localized
+                if HelperConstant.getCurrency() == "K.D" {
+                    plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+                }else{
+                    plusMinusDescLabel.text = "The minimum increase is 50 USD".localized
+                }
                 let plus = (Int(bidLabel.text ?? "") ?? 0) - 10
                 bidLabel.text = "\(plus)"
             }

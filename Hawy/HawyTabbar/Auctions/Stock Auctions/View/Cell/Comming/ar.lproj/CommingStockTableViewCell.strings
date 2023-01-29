@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "150 k.D"; ObjectID = "Itw-bd-uRI"; */
+"Itw-bd-uRI.text" = "150 k.D";
+
+/* Class = "UILabel"; text = "After total count reached the subscription will enf"; ObjectID = "LXI-vS-f73"; */
+"LXI-vS-f73.text" = "تنتهى فرصة الاشتراك بعد اكتمال العدد المطلوب";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "NwE-tJ-wWP"; */
+"NwE-tJ-wWP.text" = "2";
+
+/* Class = "UILabel"; text = "Comming Stock Auction"; ObjectID = "Sev-N7-aRm"; */
+"Sev-N7-aRm.text" = "Comming Stock Auction";
+
+/* Class = "UIButton"; normalTitle = "Subscribe"; ObjectID = "aOO-Xf-jih"; */
+"aOO-Xf-jih.normalTitle" = "اشتراك";
+
+/* Class = "UILabel"; text = "Remaining participants"; ObjectID = "jX8-QX-YXd"; */
+"jX8-QX-YXd.text" = "متبقي حاليا";
+
+/* Class = "UILabel"; text = "Total participants"; ObjectID = "sOg-9L-Wvz"; */
+"sOg-9L-Wvz.text" = "عدد الاشخاص";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "tec-50-B2M"; */
+"tec-50-B2M.text" = "3";
+
+/* Class = "UILabel"; text = "Subscription fees"; ObjectID = "wYh-SY-jig"; */
+"wYh-SY-jig.text" = "قيمه الاشتراك";

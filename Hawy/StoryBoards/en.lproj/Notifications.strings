@@ -1,0 +1,37 @@
+
+/* Class = "UILabel"; text = "Notifications"; ObjectID = "5B0-kp-pKK"; */
+"5B0-kp-pKK.text" = "Notifications";
+
+/* Class = "UILabel"; text = "Sale Auction"; ObjectID = "5TD-w1-aWv"; */
+"5TD-w1-aWv.text" = "Sale Auction";
+
+/* Class = "UILabel"; text = "2022-8-9"; ObjectID = "B9D-Sw-Nxi"; */
+"B9D-Sw-Nxi.text" = "2022-8-9";
+
+/* Class = "UILabel"; text = "تشكيلة مميزة من الحمام"; ObjectID = "Ejh-gi-qiQ"; */
+"Ejh-gi-qiQ.text" = "تشكيلة مميزة من الحمام";
+
+/* Class = "UILabel"; text = "2022-8-9"; ObjectID = "JMA-0G-mNg"; */
+"JMA-0G-mNg.text" = "2022-8-9";
+
+/* Class = "UILabel"; text = "تشكيلة مميزة من الحمام"; ObjectID = "KXl-NO-4vv"; */
+"KXl-NO-4vv.text" = "تشكيلة مميزة من الحمام";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Pwv-Ea-Yk0"; */
+"Pwv-Ea-Yk0.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "Notifications"; ObjectID = "jPT-0B-3JC"; */
+"jPT-0B-3JC.text" = "Notifications";
+
+/* Class = "UILabel"; text = "Show the card"; ObjectID = "obO-Lp-7gW"; */
+"obO-Lp-7gW.text" = "Show the card";
+
+/* Class = "UILabel"; text = "Sale Auction"; ObjectID = "zq5-TT-CrO"; */
+"zq5-TT-CrO.text" = "Transfer of Ownership";
+
+"gPt-RZ-07U.normalTitle" = "Accept transfer ownership";
+"ENR-ZE-Ryr.text" = "Welcome auction";
+"yPp-Ev-lir.normalTitle" = "Back to home";
+
+
+

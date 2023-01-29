@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArbFONTS-Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SubscriptionsPackagesCollectionViewCell" customModule="Hawy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dh5-hi-MVT">
+                        <rect key="frame" x="10" y="10" width="180" height="230"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search results for Star - Flaticon-2" translatesAutoresizingMaskIntoConstraints="NO" id="wHq-Sn-zhI">
+                                <rect key="frame" x="65" y="10" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1io-fd-Tte"/>
+                                    <constraint firstAttribute="height" constant="50" id="Y1U-l5-y6e"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hawy pro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJR-uo-zaQ">
+                                <rect key="frame" x="10" y="76" width="160" height="18"/>
+                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Xx-cb-3km">
+                                <rect key="frame" x="40" y="104" width="100" height="1"/>
+                                <color key="backgroundColor" name="PrimaryGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="6Xc-Jm-9T7"/>
+                                    <constraint firstAttribute="width" constant="100" id="QzL-77-i8g"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1kw-6l-Z7E">
+                                <rect key="frame" x="44.5" y="120" width="91" height="22.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSQ-1s-4h4">
+                                        <rect key="frame" x="0.0" y="0.0" width="19.5" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K.D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWh-2L-ofb">
+                                        <rect key="frame" x="24.5" y="0.0" width="22" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKN-4z-0W5">
+                                        <rect key="frame" x="51.5" y="0.0" width="39.5" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
+                                        <color key="textColor" name="PrimaryBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y22-du-xxv">
+                                <rect key="frame" x="40" y="157.5" width="100" height="1"/>
+                                <color key="backgroundColor" name="PrimaryGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hxX-gR-BnY"/>
+                                    <constraint firstAttribute="width" constant="100" id="yNI-Ev-ezG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3T-dl-eAW">
+                                <rect key="frame" x="15" y="170.5" width="155" height="27"/>
+                                <string key="text">هذه الباقة تتيح لك الاشتراك في
+عدد  3  اقسام داخل التطبيق</string>
+                                <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V3T-dl-eAW" secondAttribute="trailing" constant="10" id="1jC-lL-cqe"/>
+                            <constraint firstItem="y22-du-xxv" firstAttribute="top" secondItem="1kw-6l-Z7E" secondAttribute="bottom" constant="15" id="25w-zn-H2h"/>
+                            <constraint firstItem="wHq-Sn-zhI" firstAttribute="centerX" secondItem="dh5-hi-MVT" secondAttribute="centerX" id="9Pb-UR-3yJ"/>
+                            <constraint firstItem="V3T-dl-eAW" firstAttribute="leading" secondItem="dh5-hi-MVT" secondAttribute="leading" constant="15" id="E07-18-cwU"/>
+                            <constraint firstItem="y22-du-xxv" firstAttribute="centerX" secondItem="XJR-uo-zaQ" secondAttribute="centerX" id="WTq-Tm-0Or"/>
+                            <constraint firstAttribute="trailing" secondItem="XJR-uo-zaQ" secondAttribute="trailing" constant="10" id="aOb-Qv-yGh"/>
+                            <constraint firstItem="XJR-uo-zaQ" firstAttribute="top" secondItem="wHq-Sn-zhI" secondAttribute="bottom" constant="16" id="bjC-Xi-yOh"/>
+                            <constraint firstItem="1Xx-cb-3km" firstAttribute="centerX" secondItem="XJR-uo-zaQ" secondAttribute="centerX" id="bwi-Fk-uTh"/>
+                            <constraint firstItem="wHq-Sn-zhI" firstAttribute="top" secondItem="dh5-hi-MVT" secondAttribute="top" constant="10" id="eCT-3O-YOs"/>
+                            <constraint firstItem="1Xx-cb-3km" firstAttribute="top" secondItem="XJR-uo-zaQ" secondAttribute="bottom" constant="10" id="gag-AV-hGF"/>
+                            <constraint firstItem="1kw-6l-Z7E" firstAttribute="top" secondItem="1Xx-cb-3km" secondAttribute="bottom" constant="15" id="ltg-Or-aBO"/>
+                            <constraint firstItem="1kw-6l-Z7E" firstAttribute="centerX" secondItem="1Xx-cb-3km" secondAttribute="centerX" id="tD4-tw-lVB"/>
+                            <constraint firstItem="V3T-dl-eAW" firstAttribute="top" secondItem="y22-du-xxv" secondAttribute="bottom" constant="12" id="vMi-ZS-Evl"/>
+                            <constraint firstItem="XJR-uo-zaQ" firstAttribute="leading" secondItem="dh5-hi-MVT" secondAttribute="leading" constant="10" id="z49-YO-ZeG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.80000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="3" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="dh5-hi-MVT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="1Yd-8o-w8I"/>
+                <constraint firstAttribute="trailing" secondItem="dh5-hi-MVT" secondAttribute="trailing" constant="10" id="95q-BX-qIt"/>
+                <constraint firstItem="dh5-hi-MVT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="N0L-QL-FBK"/>
+                <constraint firstAttribute="bottom" secondItem="dh5-hi-MVT" secondAttribute="bottom" constant="10" id="t9z-c7-QmY"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="dh5-hi-MVT" id="9Ry-A6-ST3"/>
+                <outlet property="packageDescLabel" destination="V3T-dl-eAW" id="Wk9-IY-hgu"/>
+                <outlet property="packageNameLabel" destination="XJR-uo-zaQ" id="dZh-mQ-TXi"/>
+                <outlet property="packagePriceLabel" destination="KSQ-1s-4h4" id="ZJy-iG-ayD"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="41.517857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Search results for Star - Flaticon-2" width="28" height="27"/>
+        <namedColor name="PrimaryBlue">
+            <color red="0.0040000001899898052" green="0.5690000057220459" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryGray">
+            <color red="0.87099999189376831" green="0.87099999189376831" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

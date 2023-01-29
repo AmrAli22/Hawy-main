@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArbFONTS-Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SectionsTypeAddedTableViewCell" customModule="Hawy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iWA-lc-oQi">
+                        <rect key="frame" x="5" y="5" width="310" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-zd-wFG">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwV-i2-KXz">
+                                        <rect key="frame" x="15" y="14" width="78" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="20"/>
+                                        <color key="textColor" name="PrimaryDarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="51P-gO-eHz">
+                                        <rect key="frame" x="270" y="17.5" width="25" height="15.5"/>
+                                        <color key="tintColor" name="PrimaryDarkGray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="5Yh-kc-FXj"/>
+                                            <constraint firstAttribute="width" constant="25" id="f8i-ui-KL3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="SecondBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="51P-gO-eHz" secondAttribute="trailing" constant="15" id="7VF-bL-6nL"/>
+                                    <constraint firstItem="UwV-i2-KXz" firstAttribute="leading" secondItem="NTB-zd-wFG" secondAttribute="leading" constant="15" id="M47-3K-3tl"/>
+                                    <constraint firstItem="51P-gO-eHz" firstAttribute="centerY" secondItem="UwV-i2-KXz" secondAttribute="centerY" id="eZm-ZG-eKl"/>
+                                    <constraint firstItem="UwV-i2-KXz" firstAttribute="centerY" secondItem="NTB-zd-wFG" secondAttribute="centerY" id="ioQ-XB-mDD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iWA-lc-oQi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="4c8-QR-Fg0"/>
+                    <constraint firstItem="iWA-lc-oQi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Kwq-Vi-M8K"/>
+                    <constraint firstAttribute="bottom" secondItem="iWA-lc-oQi" secondAttribute="bottom" constant="5" id="hea-Ey-whe"/>
+                    <constraint firstAttribute="trailing" secondItem="iWA-lc-oQi" secondAttribute="trailing" constant="5" id="kau-z2-BxN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="checkImage" destination="51P-gO-eHz" id="RLg-yN-Gjt"/>
+                <outlet property="titleLabel" destination="UwV-i2-KXz" id="aqI-o3-Qea"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <namedColor name="PrimaryDarkGray">
+            <color red="0.59600001573562622" green="0.60000002384185791" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondBackground">
+            <color red="0.93300002813339233" green="0.9570000171661377" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

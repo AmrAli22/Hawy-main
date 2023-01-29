@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Payment Done"; ObjectID = "HOi-H2-MDg"; */
+"HOi-H2-MDg.normalTitle" = "تم الدفع التسليم";
+
+/* Class = "UILabel"; text = "Offer Accepted"; ObjectID = "S5O-xJ-uv0"; */
+"S5O-xJ-uv0.text" = "Offer Accepted";
+
+/* Class = "UILabel"; text = "In the event that 7 days have passed without activating the option, the application will be automatically scan the card from the buyer's  account and return it to the auction owner."; ObjectID = "TgR-AW-4Uc"; */
+"TgR-AW-4Uc.text" = "في حالة مضي ٧ ايام دون تفعيل الخيار يقوم التطبيق تلقائيا بمسح الكارت من حساب المشتري وإعادته لصاحب المزاد";
+
+/* Class = "UILabel"; text = "Are you want to accept offer?"; ObjectID = "deW-f4-WNu"; */
+"deW-f4-WNu.text" = "هل ترغب في الموافقة علي العرض ؟";
+
+/* Class = "UIButton"; normalTitle = "Accept"; ObjectID = "fSd-bD-8i8"; */
+"fSd-bD-8i8.normalTitle" = "اوافق";
+
+/* Class = "UIButton"; normalTitle = "Reject"; ObjectID = "pey-20-nAt"; */
+"pey-20-nAt.normalTitle" = "ارفض";

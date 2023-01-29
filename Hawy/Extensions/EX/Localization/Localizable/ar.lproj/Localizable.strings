@@ -1,0 +1,193 @@
+/* 
+  Localizable.strings
+  EverDeliever
+
+  Created by Ahmed on 5/10/22.
+  
+*/
+
+"welcome" = "مرحبا";
+"K.D" =  " د.ك";
+"Done" = "تم";
+"Delete" = "حذف";
+"please, login" = "من فضلك, قم بتسجيل الدخول";
+"Login" = "تسجيل الدخول";
+"Ok" = "نعم";
+"Cancel" = "إلغاء";
+"KM" = "كم";
+"Open" = "مفتوح";
+"/" = "/";
+"Closed" = "مغلق";
+"min" = "د";
+"confirm" = "تاكيد";
+"Logout" = "تسجيل خروج";
+"Are you sure, want to logout ?" = "هل انت متأكد, تريد تسجيل الخروج";
+"choosePhotoFrom" = "اختار صورة من";
+"Camera" = "كاميرا";
+"Library" = "معرض الصور";
+"selectTheReason" = "اختار السبب";
+"pleaseSelectAddress" = "من فضلك, اختار الموقع";
+"pleaseSelectHomeOrWorkOrBreakOrFriend" = "من فضلك, اختار نوع المكان منزل او عمل او استراحة او منزل صديق";
+
+"Wallet" = "المحفظة";
+"WalletBalance" = "رصيد المحفظة";
+"ChargeWallet" = "شحن المحفظة";
+
+"setting" = "الاعدادات";
+"search" = "البحث";
+"mainSection" = "الأقسام الرئيسيه";
+"all" = "الكل";
+
+"pleaseEnterFirstCodeNumber" = "من فضلك, ادخل الرقم الأول من الكود";
+"pleaseEnterSecondCodeNumber" = "من فضلك, ادخل الرقم الثاني من الكود";
+"pleaseEnterThirdCodeNumber" = "من فضلك, ادخل الرقم الثالث من الكود";
+"pleaseEnterFourthCodeNumber" = "من فضلك, ادخل الرقم الرابع من الكود";
+
+"myAccount" = "حسابي";
+"settings" = "الإعدادات";
+"favourite" = "المفضلة";
+"orders" = "طلباتي";
+"myLocations" = "العناوين";
+"termsAndConditions" = "الشروط والأحكام";
+"privacyPolicy" = "سياسة الخصوصية";
+"aboutUs" = "من نحن";
+
+"cash" = "نقدي";
+
+"youHaveEnteredAnInvalidValue" = "القيمة المدخله ليست صحيحة";
+"yourPasswordIsTooLong" = "كلمة مرورك طويلة جدا .";
+"yourpasswordistooshort" = "كلمة المرور الخاصة بك قصيرة جدا .";
+"youremailisinValid" = "بريدك الالكتروني خاطئ.";
+"yourusernameistoolong" = "اسم المستخدم الخاص بك طويل جدا.";
+"yourusernameistooshort" = "اسم المستخدم الخاص بك قصير جدا.";
+"yourcodeIsTooLong" = "Your code is too long.";
+"yourcodeIsTooShort" = "Your code is too short.";
+"yourPhoneIsTooShort" = "رقم الجوال قصير جدا .";
+"yourPhoneIsTooLong" = "رقم الجوال طويل جدا .";
+"yourNameIsNotExist" = "اسمك غير موجود .";
+"yourPhoneIsNotExist" = "رقم جوالك غير موجود .";
+"yourEmailIsNotExist" = "بريدك الالكتروني غير موجود .";
+"yourBirthOfDateIsNotExist" = "تاريخ ميلادك غير موجود .";
+"costOfYourOrderIsGood" = "تكلفه طلبك جيده .";
+"costOfYourOrderMustBeNoMoreThan500SAR" = "تكلفه طلبك يجب الا تزيد عن 500 ر.س .";
+"YourPhoneIsInValid" = "رقم جوالك خاطئ .";
+"yourPasswordMustBeLeastOneUppercaseLeastOneDigitLeastOneLowercaseLeastOneSymbolMin8CharactersTotal" = "يجب أن تتكون كلمة مرورك من حرف كبير واحد على الأقل ، ورقم واحد على الأقل ، وحرف صغير واحد على الأقل ، ورمز واحد على الأقل ، وإجمالي 8 أحرف على الأقل .";
+"invalidCalculateTotalCost" = "حساب غير صالح للتكلفة الإجمالية .";
+
+"PleaseSelectRecieveToLocation" = "من فضلك اختار موقع الاستلام";
+"PleaseSelectRecieveFromLocation" = "من فضلك اختار موقع التسليم";
+
+"pleaseAcceptTermsAndConditions" = "من فضلك وافق علي الشروط والاحكام";
+"pleaseTypeYourDetails" = "من فضلك اكتب تفاصيل المنتج";
+"pleaseTypeYourPhoneNumber" = "من فضلك اكتب رقم جوالك";
+
+"fastOrder" = "طلب سريع";
+
+"deliveryfee" = "رسوم التوصيل";
+
+/////////////////////////////////////////////////////
+"User Name" = "اسم المستخدم";
+"Phone" = "رقم الجوال";
+"Code" = "الكود";
+
+"Please, Enter your name" = "من فضلك ادخل اسم المستخدم";
+"Please, Enter your country code" = "من فضلك ادخل كود الدولة";
+"Please, Enter your phone" = "من فضلك ادخل رقم الجوال";
+"Please, Enter a valid phone number" = "من فضلك ادخل رقم جوال صحيح";
+"Please, Accept terms and conditions" = "من فضلك وافق علي الشروط والاحكام";
+"please Enter Full Code Number" = "من فضلك ادخل ارقام الكود كاملة";
+"Can't select categories, number of category to select is" = "لا يمكن اختيار كاتيجوري, عدد الكاتيجوري المتاحه";
+"category" = "قسم";
+"please, make Subscription for this category" = "من فضلك اشترك في القسم ";
+"Add Stock card" = "اضف بطاقة برصة";
+"Hawy launched new stock auction" = "هاوي اضاف مزاد برصة جديد";
+"Auction doesn't start yet !" = "المزاد لم يبدا بعد !";
+"You seem to be the luckiest person to win the auction so far" = "يبدو انك الشخص الاوفر حظا بان تفوز بالمزاد";
+"Looks like you won't win the auction" = "يبدو انك لا تفوز بالمزاد";
+"The minimum increase is 50 dinars" = "الحد الادني للزياده ٥٠ دينار";
+"The minimum increase is 10 dinars" = "الحد الادني للزياده ١٠ دينار";
+"You want to accept offer?" = "هل تريد ان تقبل العرض ؟";
+"Offer Accepted" = "تم قبول العرض";
+"Offer Rejected" = "تم رفض العرض";
+"Please, select the extended time" = "من فضلك اختار الوقت التي تريد زيادته";
+
+"Animal Name" = "اسم الحيوان";
+"Type" = "النوع";
+"Father Name" = "اسم الاب";
+"Mother Name" = "اسم الام";
+"Age" = "العمر";
+"Vaccination Name" = "اسم التطعيم";
+"Add Owner" = "اضف مالك";
+"Owner Name" = "اسم المالك";
+
+"Choose the main photo" = "اختار الصوره الرئيسية";
+"Camera" = "كاميرا";
+"Video" = "فيديو";
+"Photo Library" = "صور";
+
+"Please, select the main image" = "من فضلك اختار الصوره الرئيسية";
+"Please, select images" = "من فضلك اختار الصور";
+"Please, select only 4 images" = "من فضلك اقل عدد صور يجب ان يكون اقل من ٤ صور";
+
+"Please, Enter card type" = "من فضلك اختار نوع البطاقه";
+
+"Auction address" = "عنوان المزاد";
+"Auction date" = "تاريخ المزاد";
+"Auction time" = "توقيت بدايه المزاد";
+"Initial price" = "السعر الافتتاحي";
+
+"Please, Enter your auction name" = "من فضلك ادخل عنوان المزاد";
+"Please, Enter your auction date" = "من فضلك ادخل تاريخ المزاد";
+"Please, Enter your auction time" = "من فضلك ادخل توقيت بدايه المزاد";
+"Please, Enter your initial price" = "من فضلك ادخل السعر الافتتاحي";
+"Please, select your cards" = "من فضلك اختار البطاقه لبدء المزاد";
+
+"Can't add more than" = "لا يمكنك اضافه اكثر من";
+"card" = "بطاقة";
+
+"Ad address" = "عنوان الاعلان";
+"Ad content" = "محتوي الاعلان";
+"Add ads" = "اضف اعلان";
+"Please, Add card for ad" = "من فضلك اضف بطاقه للاعلان";
+"Please, type title" = "من فضلك اكتب عنوان للاعلان";
+"Please, type ad content" = "من فضلك اكتب محتوي للاعلان";
+
+"Please, Enter your message" = "من فضلك ادخل رسالتك";
+
+"categories" = "أقسام";
+"day" = "يوم";
+
+"All Cards" = "كل البطاقات";
+"Active Cards" = "البطاقات النشطه";
+"Pending Cards" = "البطاقات المعلقه";
+"Purchased Cards" = "البطاقات المباعه";
+"Lost Cards" = "البطاقات الضائعه";
+
+"Sale Aucations" = "مزادات البيعة";
+"Participating Auctions" = "المزادات المشارك بها";
+"Live Auctions" = "مزادات لايف";
+"Stock Auctions" = "مزادات بورصه";
+
+"Type your note" = "اكتب ملاحظاتك";
+
+"Type your message" = "اكتب رسالتك";
+
+"Auction dosen't start yet" = "المزاد لم يبدء بعد" ;
+
+"Sales Auctions" = "مزادات البيعة";
+"Live Auctions" = "مزادات اللايف";
+"Stock Auctions" = "مزادات البورصة";
+
+"Sales Auction" = "مزاد البيعة";
+"Live Auction" = "مزاد اللايف";
+"Stock Auction" = "مزاد البورصة";
+"Ad" = "إعلان";
+
+"Doc number" = "رقم التوثيق";
+
+"Add sale auction" = "أضف مزاد بيعة";
+"Add live auction" = "أضف مزاد لايف";
+
+"Please, select category first" = "من فضلك اختر القسم اولا";
+
+"Waiting For Conductor" = "في انتظار مدلل";

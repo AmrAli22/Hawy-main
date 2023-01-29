@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hawy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Ahmed Abu elregal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8R3-oI-ckY">
+                                <rect key="frame" x="30" y="434" width="354" height="28"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDn-Fx-UMp">
+                                <rect key="frame" x="147" y="562" width="120" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="4r1-IL-y7L"/>
+                                    <constraint firstAttribute="height" constant="120" id="Ga4-Vc-KSv"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Tapped me !!">
+                                    <color key="titleColor" name="PrimaryBlue"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircular" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="TappedButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJP-WF-g9R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="PrimaryBlue"/>
+                        <constraints>
+                            <constraint firstItem="8R3-oI-ckY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2vH-hj-dqP"/>
+                            <constraint firstItem="BDn-Fx-UMp" firstAttribute="top" secondItem="8R3-oI-ckY" secondAttribute="bottom" constant="100" id="30c-V3-pE4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8R3-oI-ckY" secondAttribute="trailing" constant="30" id="KIp-fe-kcV"/>
+                            <constraint firstItem="BDn-Fx-UMp" firstAttribute="centerX" secondItem="8R3-oI-ckY" secondAttribute="centerX" id="PAb-az-c5Q"/>
+                            <constraint firstItem="8R3-oI-ckY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ZLB-rc-G7k"/>
+                            <constraint firstItem="8R3-oI-ckY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bTg-oQ-6BX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TappedButtonOutlet" destination="BDn-Fx-UMp" id="23z-gN-2RU"/>
+                        <outlet property="TappedButtonTopConstraint" destination="30c-V3-pE4" id="biw-Pd-cbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="PrimaryBlue">
+            <color red="0.0039215686274509803" green="0.56862745098039214" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

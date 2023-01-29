@@ -1,0 +1,192 @@
+/* 
+  Localizable.strings
+  EverDeliever
+
+  Created by Ahmed on 5/10/22.
+  
+*/
+
+"welcome" = "Welcome";
+"K.D" =  "K.D";
+"Done" = "Done";
+"Delete" = "Delete";
+"please, Login" = "please, Login";
+"Login" = "Login";
+"Ok" = "Ok";
+"Cancel" = "Cancel";
+"KM" = "KM";
+"Open" = "Open";
+"/" = "/";
+"Closed" = "Closed";
+"min" = " min";
+"Logout" = "Log out";
+"confirm" = "confirm";
+"Are you sure, want to logout ?" = "Are you sure, you want to logout ?";
+"choosePhotoFrom" = "Choose Photo From";
+"Camera" = "Camera";
+"Library" = "Library";
+"selectTheReason" = "Select the reason";
+"pleaseSelectAddress" = "please, select address";
+"pleaseSelectHomeOrWorkOrBreakOrFriend" = "please, select Home or Work or Break or Friend";
+
+"Wallet" = "Wallet";
+"WalletBalance" = "Wallet Balance";
+"ChargeWallet" = "Charge Wallet";
+
+"setting" = "Setting";
+"search" = "Search";
+"mainSection" = "Main Section";
+"all" = "All";
+
+"pleaseEnterFirstCodeNumber" = "please, enter first code number";
+"pleaseEnterSecondCodeNumber" = "please, enter second code number";
+"pleaseEnterThirdCodeNumber" = "please, enter third code number";
+"pleaseEnterFourthCodeNumber" = "please, enter fourth code number";
+
+"myAccount" = "My Account";
+"settings" = "Settings";
+"favourite" = "Favourite";
+"orders" = "Orders";
+"myLocations" = "My Locations";
+"termsAndConditions" = "Terms and Conditions";
+"privacyPolicy" = "Privacy Policy";
+"aboutUs" = "About Us";
+
+"cash" = "cash";
+
+"youHaveEnteredAnInvalidValue" = "You have entered an invalid value.";
+"yourPasswordIsTooLong" = "Your password is too long.";
+"yourpasswordistooshort" = "Your password is too short.";
+"youremailisinValid" = "Your email is inValid.";
+"yourusernameistoolong" = "Your username is too long.";
+"yourusernameistooshort" = "Your username is too short.";
+"yourcodeIsTooLong" = "Your code is too long.";
+"yourcodeIsTooShort" = "Your code is too short.";
+"yourPhoneIsTooShort" = "Your Phone is too short.";
+"yourPhoneIsTooLong" = "Your Phone is too long.";
+"yourNameIsNotExist" = "Your name is not exist.";
+"yourPhoneIsNotExist" = "Your phone is not exist.";
+"yourEmailIsNotExist" = "Your email is not exist.";
+"yourBirthOfDateIsNotExist" = "Your birth of date is not exist.";
+"costOfYourOrderIsGood" = "Cost of your order is good.";
+"costOfYourOrderMustBeNoMoreThan500SAR" = "Cost of your order must be no more than 500 SAR.";
+"YourPhoneIsInValid" = "Your phone is inValid.";
+"yourPasswordMustBeLeastOneUppercaseLeastOneDigitLeastOneLowercaseLeastOneSymbolMin8CharactersTotal" = "Your password must be least one uppercase, least one digit, least one lowercase, least one symbol, min 8 characters total";
+"invalidCalculateTotalCost" = "Invalid Calculate total cost.";
+
+"PleaseSelectRecieveToLocation" = "Please select a pick-up location";
+"PleaseSelectRecieveFromLocation" = "Please select a delivery location";
+
+"pleaseAcceptTermsAndConditions" = "Please Accept Terms And Conditions";
+"pleaseTypeYourDetails" = "Please Type Your Details";
+"pleaseTypeYourPhoneNumber" = "Please Type Your Phone Number";
+
+"fastOrder" = "Fast Order";
+
+"deliveryfee" = "delivery fee";
+
+//////////////////////////////////////////////////////
+"User Name" = "User Name";
+"Phone" = "Phone";
+"Code" = "Code";
+
+"Please, Enter your name" = "Please, Enter your name";
+"Please, Enter your country code" = "Please, Enter your country code";
+"Please, Enter your phone" = "Please, Enter your phone";
+"Please, Enter a valid phone number" = "Please, Enter a valid phone number";
+"Please, Accept terms and conditions" = "Please, Accept terms and conditions";
+"please Enter Full Code Number" = "please Enter Full Code Number";
+"Can't select categories, number of category to select is" = "Can't select categories, number of category to select is";
+"category" = "category";
+"please, make Subscription for this category" = "please, make Subscription for this category";
+"Add Stock card" = "Add Stock card";
+"Hawy launched new stock auction" = "Hawy launched new stock auction";
+"Auction doesn't start yet !" = "Auction doesn't start yet !";
+"You seem to be the luckiest person to win the auction so far" = "You seem to be the luckiest person to win the auction so far";
+"Looks like you won't win the auction" = "Looks like you won't win the auction";
+"The minimum increase is 50 dinars" = "The minimum increase is 50 dinars";
+"The minimum increase is 10 dinars" = "The minimum increase is 10 dinars";
+"You want to accept offer?" = "You want to accept offer?";
+"Offer accepted" = "Offer accepted";
+"Offer rejected" = "Offer rejected";
+"Please, select the extended time" = "Please, select the extended time";
+"Animal Name" = "Animal Name";
+"Type" = "Type";
+"Father Name" = "Father Name";
+"Mother Name" = "Mother Name";
+"Age" = "Age";
+"Vaccination Name" = "Vaccination Name";
+"Add Owner" = "Add Owner";
+"Owner Name" = "Owner Name";
+
+"Choose the main photo" = "Choose the main photo";
+"Camera" = "Camera";
+"Video" = "Video";
+"Photo Library" = "Photo Library";
+
+"Please, select the main image" = "Please, select the main image";
+"Please, select images" = "Please, select images";
+"Please, select only 4 images" = "Please, select only 4 images";
+
+"Please, Enter card type" = "Please, Enter card type";
+
+"Auction address" = "Auction address";
+"Auction date" = "Auction date";
+"Auction time" = "Auction time";
+"Initial price" = "Initial price";
+
+"Please, Enter your auction name" = "Please, Enter your auction name";
+"Please, Enter your auction date" = "Please, Enter your auction date";
+"Please, Enter your auction time" = "Please, Enter your auction time";
+"Please, Enter your initial price" = "Please, Enter your initial price";
+"Please, select your cards" = "Please, select your cards";
+
+"Can't add more than" = "Can't add more than";
+"card" = "card";
+
+"Ad address" = "Ad address";
+"Ad content" = "Ad content";
+"Add ads" = "Add ads";
+"Please, Add card for ad" = "Please, Add card for ad";
+"Please, type title" = "Please, type title";
+"Please, type ad content" = "Please, type ad content";
+
+"Please, Enter your message" = "Please, Enter your message";
+
+"categories" = "categories";
+"day" = "day";
+
+"All Cards" = "All Cards";
+"Active Cards" = "Active Cards";
+"Pending Cards" = "Pending Cards";
+"Purchased Cards" = "Purchased Cards";
+"Lost Cards" = "Lost Cards";
+
+"Sale Aucations" = "Sale Aucations";
+"Participating Auctions" = "Participating Auctions";
+"Live Auctions" = "Live Auctions";
+"Stock Auctions" = "Stock Auctions";
+
+"Type your note" = "Type your note";
+
+"Type your message" = "Type your message";
+
+"Auction dosen't start yet" = "Auction dosen't start yet" ;
+
+"Sales Auctions" = "Sales Auctions";
+"Live Auctions" = "Live Auctions";
+"Stock Auctions" = "Stock Auctions";
+
+"Sales Auction" = "Sales Auction";
+"Live Auction" = "Live Auction";
+"Stock Auction" = "Stock Auction";
+"Ad" = "Ad";
+
+"Doc number" = "Doc number";
+
+"Add sale auction" = "Add sale auction";
+"Add live auction" = "Add live auction";
+
+"Please, select category first" = "Please, select category first";
+
+"Waiting For Conductor" = "Waiting For Conductor";

@@ -1,0 +1,418 @@
+
+/* Class = "UILabel"; text = "Contact the owner of the offer"; ObjectID = "0XS-BN-ZU7"; */
+"0XS-BN-ZU7.text" = "Contact the owner of the offer";
+
+/* Class = "UILabel"; text = "Add live auction"; ObjectID = "0Xk-KY-Ikg"; */
+"0Xk-KY-Ikg.text" = "Add live auction";
+
+/* Class = "UILabel"; text = "Ahmed mohamed"; ObjectID = "0j5-PI-a4z"; */
+"0j5-PI-a4z.text" = "Ahmed mohamed";
+
+/* Class = "UILabel"; text = "subscriptions members"; ObjectID = "0xy-eH-eEl"; */
+"0xy-eH-eEl.text" = "subscriptions members";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "2Wi-Uq-oyT"; */
+"2Wi-Uq-oyT.text" = "Animal name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2aS-aQ-lU8"; */
+"2aS-aQ-lU8.text" = "Label";
+
+/* Class = "UILabel"; text = "Add sale auction"; ObjectID = "3Go-7s-gXk"; */
+"3Go-7s-gXk.text" = "Add sale auction";
+
+/* Class = "UILabel"; text = "Choose the time"; ObjectID = "4fJ-CI-k22"; */
+"4fJ-CI-k22.text" = "Choose the time";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "4n7-1H-UJD"; */
+"4n7-1H-UJD.text" = "Animal name";
+
+/* Class = "UILabel"; text = "In the event that 24 hours have passed without activating the option, the card will be automatically deleted from the buyer's account and returned to the auctioneer"; ObjectID = "4yT-LP-88M"; */
+"4yT-LP-88M.text" = "In the event that 24 hours have passed without activating the option, the card will be automatically deleted from the buyer's account and returned to the auctioneer";
+
+/* Class = "UILabel"; text = "Stock Auctions"; ObjectID = "54b-Jj-UcD"; */
+"54b-Jj-UcD.text" = "Stock Auctions";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "5RK-uG-1cH"; */
+"5RK-uG-1cH.text" = "Animal name";
+
+/* Class = "UILabel"; text = "Add stock auction"; ObjectID = "5jB-6S-ETP"; */
+"5jB-6S-ETP.text" = "Add stock auction";
+
+/* Class = "UILabel"; text = "Subscribtion request"; ObjectID = "5u0-ov-acl"; */
+"5u0-ov-acl.text" = "Subscribtion request";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "5vF-DA-lkc"; */
+"5vF-DA-lkc.text" = "Animal name";
+
+/* Class = "UILabel"; text = "Current"; ObjectID = "65J-VF-9UF"; */
+"65J-VF-9UF.text" = "Current";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "6Fd-lX-00k"; */
+"6Fd-lX-00k.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Add sale auction"; ObjectID = "6Ii-1U-rBi"; */
+"6Ii-1U-rBi.text" = "Add sale auction";
+
+/* Class = "UIButton"; normalTitle = "subscribe"; ObjectID = "6J6-W0-LgA"; */
+"6J6-W0-LgA.normalTitle" = "subscribe";
+
+/* Class = "UILabel"; text = "Wed"; ObjectID = "70M-d5-Oi4"; */
+"70M-d5-Oi4.text" = "Wed";
+
+/* Class = "UILabel"; text = "Feb 2021"; ObjectID = "7aG-Mr-PDR"; */
+"7aG-Mr-PDR.text" = "Feb 2021";
+
+/* Class = "UILabel"; text = "Fri"; ObjectID = "96y-n2-RFL"; */
+"96y-n2-RFL.text" = "Fri";
+
+/* Class = "UILabel"; text = "Contact the owner of the offer"; ObjectID = "9NZ-O1-dmc"; */
+"9NZ-O1-dmc.text" = "Contact the owner of the offer";
+
+/* Class = "UILabel"; text = "Owners"; ObjectID = "9xo-aT-o1N"; */
+"9xo-aT-o1N.text" = "Owners";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "ANx-HG-WJ2"; */
+"ANx-HG-WJ2.normalTitle" = "Save";
+
+/* Class = "UITextField"; placeholder = "Add initial price"; ObjectID = "AeT-Ql-GAu"; */
+"AeT-Ql-GAu.placeholder" = "Add initial price";
+
+/* Class = "UILabel"; text = "40"; ObjectID = "B8w-24-lN5"; */
+"B8w-24-lN5.text" = "40";
+
+/* Class = "UIButton"; normalTitle = "Add a bid"; ObjectID = "Cjk-e3-JxX"; */
+"Cjk-e3-JxX.normalTitle" = "Add a bid";
+
+/* Class = "UILabel"; text = "Choose auction cards"; ObjectID = "D6g-Dz-yBs"; */
+"D6g-Dz-yBs.text" = "Choose auction cards";
+
+/* Class = "UILabel"; text = "Ahmed mohamed"; ObjectID = "DaO-WS-OUq"; */
+"DaO-WS-OUq.text" = "Ahmed mohamed";
+
+/* Class = "UILabel"; text = "Property sequance"; ObjectID = "Dlb-xS-HGK"; */
+"Dlb-xS-HGK.text" = "Property sequance";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "E0d-dh-tQ4"; */
+"E0d-dh-tQ4.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Back to card"; ObjectID = "EEs-X8-LMY"; */
+"EEs-X8-LMY.normalTitle" = "Back to card";
+
+/* Class = "UIButton"; normalTitle = "Choose"; ObjectID = "FY3-kW-s8L"; */
+"FY3-kW-s8L.normalTitle" = "Choose";
+
+/* Class = "UILabel"; text = "The minimum increase is 10 dinars"; ObjectID = "Fyf-Fp-Mbi"; */
+"Fyf-Fp-Mbi.text" = "The minimum increase is 10 dinars";
+
+/* Class = "UILabel"; text = "40"; ObjectID = "GJe-oX-VLV"; */
+"GJe-oX-VLV.text" = "40";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "Gqj-dF-Iu8"; */
+"Gqj-dF-Iu8.text" = "0";
+
+/* Class = "UILabel"; text = "Upcoming"; ObjectID = "H3I-MX-S7f"; */
+"H3I-MX-S7f.text" = "Upcoming";
+
+/* Class = "UILabel"; text = "Upcoming"; ObjectID = "HcV-dP-xQt"; */
+"HcV-dP-xQt.text" = "Upcoming";
+
+/* Class = "UILabel"; text = "You seem to be the luckiest person to win the auction so far"; ObjectID = "InT-eY-Urq"; */
+"InT-eY-Urq.text" = "You seem to be the luckiest person to win the auction so far";
+
+/* Class = "UILabel"; text = "Sun"; ObjectID = "J8x-ZD-JOR"; */
+"J8x-ZD-JOR.text" = "Sun";
+
+/* Class = "UILabel"; text = "40"; ObjectID = "JqB-Xj-TQT"; */
+"JqB-Xj-TQT.text" = "40";
+
+/* Class = "UILabel"; text = "Property sequance"; ObjectID = "KbN-QV-DQP"; */
+"KbN-QV-DQP.text" = "Property sequance";
+
+/* Class = "UILabel"; text = "Spoilt by me"; ObjectID = "Kbe-Nc-7uE"; */
+"Kbe-Nc-7uE.text" = "Spoilt by me";
+
+/* Class = "UILabel"; text = "Congratulations, you won the auction "; ObjectID = "M6x-St-OHH"; */
+"M6x-St-OHH.text" = "Congratulations, you won the auction ";
+
+/* Class = "UILabel"; text = "All Cards"; ObjectID = "NGo-no-DqG"; */
+"NGo-no-DqG.text" = "All Cards";
+
+/* Class = "UIButton"; normalTitle = "Choose"; ObjectID = "Nh0-00-F0u"; */
+"Nh0-00-F0u.normalTitle" = "Choose";
+
+/* Class = "UIButton"; normalTitle = "Back to home"; ObjectID = "Nm3-Hf-xt0"; */
+"Nm3-Hf-xt0.normalTitle" = "Back to home";
+
+/* Class = "UILabel"; text = "Add Price"; ObjectID = "NxU-5L-6zX"; */
+"NxU-5L-6zX.text" = "Add Price";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "PeU-JN-psF"; */
+"PeU-JN-psF.text" = "Type";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QBJ-bE-9Nr"; */
+"QBJ-bE-9Nr.text" = "Label";
+
+/* Class = "UILabel"; text = "Vaccinations"; ObjectID = "QF9-a3-tgG"; */
+"QF9-a3-tgG.text" = "Vaccinations";
+
+/* Class = "UILabel"; text = "00 : 00 : 00"; ObjectID = "QhA-Py-TRC"; */
+"QhA-Py-TRC.text" = "00 : 00 : 00";
+
+/* Class = "UILabel"; text = "Vaccinations"; ObjectID = "QzD-g8-F95"; */
+"QzD-g8-F95.text" = "Vaccinations";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "Sf3-Mr-9rs"; */
+"Sf3-Mr-9rs.text" = "1";
+
+/* Class = "UITextField"; placeholder = "Auction address"; ObjectID = "SgB-zr-bjo"; */
+"SgB-zr-bjo.placeholder" = "Auction address";
+
+/* Class = "UILabel"; text = "Card information"; ObjectID = "T8O-vw-RS3"; */
+"T8O-vw-RS3.text" = "Card information";
+
+/* Class = "UIButton"; normalTitle = "Publish auction"; ObjectID = "TZ3-0z-mbY"; */
+"TZ3-0z-mbY.normalTitle" = "Publish auction";
+
+/* Class = "UILabel"; text = "Vaccinations"; ObjectID = "U9D-6K-aDq"; */
+"U9D-6K-aDq.text" = "Vaccinations";
+
+/* Class = "UILabel"; text = "Subscribed cards"; ObjectID = "UCm-Jf-t9a"; */
+"UCm-Jf-t9a.text" = "Subscribed cards";
+
+/* Class = "UILabel"; text = "Choose the time"; ObjectID = "UQf-aL-XW1"; */
+"UQf-aL-XW1.text" = "Choose the time";
+
+/* Class = "UILabel"; text = "Upcoming"; ObjectID = "Ual-Q4-zyS"; */
+"Ual-Q4-zyS.text" = "Upcoming";
+
+/* Class = "UILabel"; text = "Sat"; ObjectID = "UrO-uk-Uao"; */
+"UrO-uk-Uao.text" = "Sat";
+
+/* Class = "UILabel"; text = "تشكيله مميزه من الحمام"; ObjectID = "Uzz-lI-HcJ"; */
+"Uzz-lI-HcJ.text" = "تشكيله مميزه من الحمام";
+
+/* Class = "UILabel"; text = "Kwd"; ObjectID = "VTC-SF-hiE"; */
+"VTC-SF-hiE.text" = "Kwd";
+
+/* Class = "UIButton"; normalTitle = "Back to card"; ObjectID = "Vb7-mO-ir5"; */
+"Vb7-mO-ir5.normalTitle" = "Back to card";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "Vbi-qd-Rke"; */
+"Vbi-qd-Rke.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+
+/* Class = "UIButton"; normalTitle = "Extend auction time"; ObjectID = "VfU-Lx-ttl"; */
+"VfU-Lx-ttl.normalTitle" = "Extend auction time";
+
+/* Class = "UILabel"; text = "Stock Auctions"; ObjectID = "Vfg-Iz-zJ2"; */
+"Vfg-Iz-zJ2.text" = "Stock Auctions";
+
+/* Class = "UIButton"; normalTitle = "Add a bid"; ObjectID = "Vng-7h-jZM"; */
+"Vng-7h-jZM.normalTitle" = "Add a bid";
+
+/* Class = "UIButton"; normalTitle = "Extend time"; ObjectID = "Xbp-4t-ABj"; */
+"Xbp-4t-ABj.normalTitle" = "Extend time";
+
+/* Class = "UILabel"; text = "Kwd"; ObjectID = "Xlt-Vb-adu"; */
+"Xlt-Vb-adu.text" = "Kwd";
+
+/* Class = "UILabel"; text = "Send share request"; ObjectID = "Y82-WU-3xN"; */
+"Y82-WU-3xN.text" = "Send share request";
+
+/* Class = "UILabel"; text = "Current"; ObjectID = "YEE-v5-6Lg"; */
+"YEE-v5-6Lg.text" = "Current";
+
+/* Class = "UILabel"; text = "Sales Auctions"; ObjectID = "Yws-ro-hu6"; */
+"Yws-ro-hu6.text" = "Sales Auctions";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "ZJJ-Oc-9M4"; */
+"ZJJ-Oc-9M4.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+
+/* Class = "UILabel"; text = "Tue"; ObjectID = "ZaF-y3-X3i"; */
+"ZaF-y3-X3i.text" = "Tue";
+
+/* Class = "UITextField"; placeholder = "Auction time"; ObjectID = "ZdZ-9l-OHd"; */
+"ZdZ-9l-OHd.placeholder" = "Auction time";
+
+/* Class = "UILabel"; text = "Bids number :"; ObjectID = "aBy-eA-yVT"; */
+"aBy-eA-yVT.text" = "Bids number :";
+
+/* Class = "UIButton"; normalTitle = "Choose"; ObjectID = "aSi-7o-xyz"; */
+"aSi-7o-xyz.normalTitle" = "Choose";
+
+/* Class = "UILabel"; text = "Choose auction cards"; ObjectID = "aWB-qT-5ji"; */
+"aWB-qT-5ji.text" = "Choose auction cards";
+
+/* Class = "UILabel"; text = "Subscribe to the auction"; ObjectID = "afg-lx-0Ic"; */
+"afg-lx-0Ic.text" = "Subscribe to the auction";
+
+/* Class = "UILabel"; text = "Looks like you won't win the auction"; ObjectID = "agF-iz-dLL"; */
+"agF-iz-dLL.text" = "Looks like you won't win the auction";
+
+/* Class = "UILabel"; text = "00 : 00 : 00"; ObjectID = "b8J-ez-UdC"; */
+"b8J-ez-UdC.text" = "00 : 00 : 00";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bJW-6t-Xcx"; */
+"bJW-6t-Xcx.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Accept"; ObjectID = "c5g-4v-ubK"; */
+"c5g-4v-ubK.normalTitle" = "Accept";
+
+/* Class = "UIButton"; normalTitle = "Back to card"; ObjectID = "cFI-B9-j5h"; */
+"cFI-B9-j5h.normalTitle" = "Back to card";
+
+/* Class = "UILabel"; text = "9-1-2022"; ObjectID = "cp7-5x-YLT"; */
+"cp7-5x-YLT.text" = "9-1-2022";
+
+/* Class = "UIButton"; normalTitle = "Reject"; ObjectID = "dQD-5V-PIn"; */
+"dQD-5V-PIn.normalTitle" = "Reject";
+
+/* Class = "UILabel"; text = "Kwd"; ObjectID = "dqD-eB-FEC"; */
+"dqD-eB-FEC.text" = "Kwd";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "e4G-Kz-5L5"; */
+"e4G-Kz-5L5.text" = "0";
+
+/* Class = "UITextField"; placeholder = "Auction date"; ObjectID = "fk7-cg-FnA"; */
+"fk7-cg-FnA.placeholder" = "Auction date";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "gPP-qd-Foa"; */
+"gPP-qd-Foa.text" = "Animal name";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "gWL-wH-H7C"; */
+"gWL-wH-H7C.text" = "Age";
+
+/* Class = "UIButton"; normalTitle = "Watting for accept"; ObjectID = "gYh-go-Sv8"; */
+"gYh-go-Sv8.normalTitle" = "Watting for accept";
+
+/* Class = "UIButton"; normalTitle = "Switch Camera"; ObjectID = "gca-wN-enV"; */
+"gca-wN-enV.normalTitle" = "Switch Camera";
+
+/* Class = "UIButton"; normalTitle = "Mute"; ObjectID = "glE-pY-cBW"; */
+"glE-pY-cBW.normalTitle" = "Mute";
+
+/* Class = "UILabel"; text = "Kwd"; ObjectID = "hFx-W5-yDM"; */
+"hFx-W5-yDM.text" = "Kwd";
+
+/* Class = "UITextField"; placeholder = "Auction address"; ObjectID = "ipd-hd-OTV"; */
+"ipd-hd-OTV.placeholder" = "Auction address";
+
+/* Class = "UILabel"; text = "Thur"; ObjectID = "jH6-0o-m0y"; */
+"jH6-0o-m0y.text" = "Thur";
+
+/* Class = "UITextField"; placeholder = "Auction address"; ObjectID = "jS0-CG-yIk"; */
+"jS0-CG-yIk.placeholder" = "Auction address";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jpj-E8-Z2j"; */
+"jpj-E8-Z2j.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Initial price"; ObjectID = "kRB-Bs-6Mc"; */
+"kRB-Bs-6Mc.placeholder" = "Initial price";
+
+/* Class = "UIButton"; normalTitle = "Pay Done"; ObjectID = "kyl-lj-QRG"; */
+"kyl-lj-QRG.normalTitle" = "Pay Done";
+
+/* Class = "UILabel"; text = "Card information"; ObjectID = "l1B-4l-FIW"; */
+"l1B-4l-FIW.text" = "Card information";
+
+/* Class = "UILabel"; text = "Mother name"; ObjectID = "lIK-Um-nVu"; */
+"lIK-Um-nVu.text" = "Mother name";
+
+/* Class = "UILabel"; text = "The minimum increase is 10 dinars"; ObjectID = "laR-vy-Mzd"; */
+"laR-vy-Mzd.text" = "The minimum increase is 10 dinars";
+
+/* Class = "UILabel"; text = "Ahmed abuelregal"; ObjectID = "lzt-OV-ofI"; */
+"lzt-OV-ofI.text" = "Ahmed abuelregal";
+
+/* Class = "UIButton"; normalTitle = "Video Mute"; ObjectID = "mNK-5U-nk9"; */
+"mNK-5U-nk9.normalTitle" = "Video Mute";
+
+/* Class = "UIButton"; normalTitle = "Publish auction"; ObjectID = "maf-aR-CVi"; */
+"maf-aR-CVi.normalTitle" = "Publish auction";
+
+/* Class = "UILabel"; text = "Choose auction cards"; ObjectID = "n76-dF-CUq"; */
+"n76-dF-CUq.text" = "Choose auction cards";
+
+/* Class = "UIButton"; normalTitle = "Back to home"; ObjectID = "oEi-Ji-KQr"; */
+"oEi-Ji-KQr.normalTitle" = "Back to home";
+
+/* Class = "UILabel"; text = "Choose the spoiler on the card"; ObjectID = "oZh-mm-qD4"; */
+"oZh-mm-qD4.text" = "Choose the spoiler on the card";
+
+/* Class = "UIButton"; normalTitle = "Hang Up"; ObjectID = "pCY-90-kQ8"; */
+"pCY-90-kQ8.normalTitle" = "Hang Up";
+
+/* Class = "UILabel"; text = "Choose the spoiler"; ObjectID = "pbp-x5-rRo"; */
+"pbp-x5-rRo.text" = "Choose the spoiler";
+
+/* Class = "UILabel"; text = "Mon"; ObjectID = "piD-Om-uUD"; */
+"piD-Om-uUD.text" = "Mon";
+
+/* Class = "UILabel"; text = "Spoilt by admin"; ObjectID = "q6l-fe-Wkt"; */
+"q6l-fe-Wkt.text" = "Spoilt by admin";
+
+/* Class = "UILabel"; text = "Current"; ObjectID = "rMI-Pd-71I"; */
+"rMI-Pd-71I.text" = "Current";
+
+/* Class = "UILabel"; text = "Father name"; ObjectID = "rOc-FZ-jcf"; */
+"rOc-FZ-jcf.text" = "Father name";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "sLe-1s-JTv"; */
+"sLe-1s-JTv.text" = "Animal name";
+
+/* Class = "UILabel"; text = "Card information"; ObjectID = "sWm-5M-Czd"; */
+"sWm-5M-Czd.text" = "Card information";
+
+/* Class = "UILabel"; text = "Live Auctions"; ObjectID = "sWy-Ek-xKB"; */
+"sWy-Ek-xKB.text" = "Live Auctions";
+
+/* Class = "UITextField"; placeholder = "Auction time"; ObjectID = "t7j-BI-30v"; */
+"t7j-BI-30v.placeholder" = "Auction time";
+
+/* Class = "UILabel"; text = "9-8-2022"; ObjectID = "uIq-2Y-7lb"; */
+"uIq-2Y-7lb.text" = "9-8-2022";
+
+/* Class = "UILabel"; text = "Ahmed mohamed"; ObjectID = "uk4-oa-W3m"; */
+"uk4-oa-W3m.text" = "Ahmed mohamed";
+
+/* Class = "UILabel"; text = "You want to accept offer?"; ObjectID = "up7-cs-2JT"; */
+"up7-cs-2JT.text" = "You want to accept offer?";
+
+/* Class = "UILabel"; text = "Subscribe to the auction"; ObjectID = "uwQ-4A-OXr"; */
+"uwQ-4A-OXr.text" = "Subscribe to the auction";
+
+/* Class = "UILabel"; text = "Sales Auctions"; ObjectID = "vA5-p1-p1u"; */
+"vA5-p1-p1u.text" = "Sales Auctions";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "w50-RK-utv"; */
+"w50-RK-utv.text" = "10";
+
+/* Class = "UITextField"; placeholder = "Auction date"; ObjectID = "wif-Wb-2ab"; */
+"wif-Wb-2ab.placeholder" = "Auction date";
+
+/* Class = "UILabel"; text = "ExtendTime"; ObjectID = "xAQ-AU-6Ea"; */
+"xAQ-AU-6Ea.text" = "ExtendTime";
+
+/* Class = "UILabel"; text = "Congratulations, you won the auction "; ObjectID = "xL6-Kc-Wr4"; */
+"xL6-Kc-Wr4.text" = "Congratulations, you won the auction ";
+
+/* Class = "UIButton"; normalTitle = "Watting for accept"; ObjectID = "xPK-lG-jNO"; */
+"xPK-lG-jNO.normalTitle" = "Watting for accept";
+
+"dya-mN-zBd.text" = "Animal name";
+"8Hf-fZ-i4B.text" = "Father name";
+"brM-2x-GbG.text" = "Mother name";
+
+"3d8-pC-eMP.normalTitle" = "Add card";
+
+"eMS-FK-ghm.text" = "Choose the spoiler";
+"weV-ak-PtV.text" = "Spoilt by admin";
+"9Sm-P0-a90.text" = "Spoilt by me";
+"J2L-60-dBr.normalTitle" = "Choose";
+
+"5Pe-IW-zqX.text" = "Price:";
+
+"QBk-9S-FCm.placeholder" = "Categories";
+
+"N1X-a4-Xju.normalTitle" = "Choose";
+
+"aLE-AP-tbP.placeholder" = "Categories";

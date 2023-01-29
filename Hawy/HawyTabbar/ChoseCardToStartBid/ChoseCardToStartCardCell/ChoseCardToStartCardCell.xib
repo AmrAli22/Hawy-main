@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChoseCardToStartCardCell" id="gTV-IL-0wX" customClass="ChoseCardToStartCardCell" customModule="Hawy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="212"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="263" height="212"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BdI-fD-Dcd">
+                        <rect key="frame" x="10" y="10" width="243" height="192"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authBanner" translatesAutoresizingMaskIntoConstraints="NO" id="iYF-Vf-jnF">
+                                <rect key="frame" x="9.6666666666666714" y="10" width="224" height="105"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v0q-ir-2t0">
+                                <rect key="frame" x="9.6666666666666714" y="115" width="224" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsK-QP-lUY">
+                                        <rect key="frame" x="0.0" y="0.0" width="224" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T8T-Ep-9h2">
+                                        <rect key="frame" x="0.0" y="35" width="224" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conductor is Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W4k-dr-YeJ">
+                                        <rect key="frame" x="0.0" y="53" width="224" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="14"/>
+                                        <color key="textColor" red="0.1019607843" green="0.63921568630000003" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iYF-Vf-jnF" firstAttribute="top" secondItem="BdI-fD-Dcd" secondAttribute="top" constant="10" id="1VS-Se-emz"/>
+                            <constraint firstItem="v0q-ir-2t0" firstAttribute="top" secondItem="iYF-Vf-jnF" secondAttribute="bottom" id="XXx-pz-Nwj"/>
+                            <constraint firstItem="iYF-Vf-jnF" firstAttribute="centerX" secondItem="BdI-fD-Dcd" secondAttribute="centerX" id="amh-1l-vZT"/>
+                            <constraint firstItem="v0q-ir-2t0" firstAttribute="leading" secondItem="iYF-Vf-jnF" secondAttribute="leading" id="kUD-V6-GwC"/>
+                            <constraint firstAttribute="bottom" secondItem="v0q-ir-2t0" secondAttribute="bottom" constant="10" id="tT4-QS-Sjm"/>
+                            <constraint firstItem="v0q-ir-2t0" firstAttribute="trailing" secondItem="iYF-Vf-jnF" secondAttribute="trailing" id="wJT-fL-pMs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="BdI-fD-Dcd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="RIc-cC-bhE"/>
+                <constraint firstAttribute="trailing" secondItem="BdI-fD-Dcd" secondAttribute="trailing" constant="10" id="XoR-pJ-7vr"/>
+                <constraint firstItem="BdI-fD-Dcd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="bZh-O5-kaH"/>
+                <constraint firstAttribute="bottom" secondItem="BdI-fD-Dcd" secondAttribute="bottom" constant="10" id="v3R-8j-gJF"/>
+            </constraints>
+            <size key="customSize" width="263" height="212"/>
+            <connections>
+                <outlet property="CardImage" destination="iYF-Vf-jnF" id="5bj-ts-ekh"/>
+                <outlet property="ConductorHere" destination="W4k-dr-YeJ" id="4M3-2t-47k"/>
+                <outlet property="NameOfCard" destination="VsK-QP-lUY" id="jGk-Mm-ogM"/>
+                <outlet property="costOfCard" destination="T8T-Ep-9h2" id="ibP-6W-UX9"/>
+            </connections>
+            <point key="canvasLocation" x="133.58778625954199" y="-45.070422535211272"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="authBanner" width="375" height="260"/>
+    </resources>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SubCategoryDetailsCollectionViewCell" customModule="Hawy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UV2-dP-6gR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saleAuctionsImg" translatesAutoresizingMaskIntoConstraints="NO" id="hIt-l6-sI8">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hIt-l6-sI8" firstAttribute="leading" secondItem="UV2-dP-6gR" secondAttribute="leading" id="DZy-xd-vpC"/>
+                            <constraint firstItem="hIt-l6-sI8" firstAttribute="top" secondItem="UV2-dP-6gR" secondAttribute="top" id="hNH-7x-GA7"/>
+                            <constraint firstAttribute="bottom" secondItem="hIt-l6-sI8" secondAttribute="bottom" id="hNX-hj-vuw"/>
+                            <constraint firstAttribute="trailing" secondItem="hIt-l6-sI8" secondAttribute="trailing" id="sC4-Lz-H2t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UV2-dP-6gR" secondAttribute="bottom" id="YeW-5q-QYP"/>
+                <constraint firstItem="UV2-dP-6gR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="czi-7n-IkS"/>
+                <constraint firstAttribute="trailing" secondItem="UV2-dP-6gR" secondAttribute="trailing" id="gHl-z1-quu"/>
+                <constraint firstItem="UV2-dP-6gR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k8l-sS-F9q"/>
+            </constraints>
+            <connections>
+                <outlet property="imageOutlet" destination="hIt-l6-sI8" id="DGT-tU-0uL"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="64"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="saleAuctionsImg" width="375" height="454"/>
+    </resources>
+</document>

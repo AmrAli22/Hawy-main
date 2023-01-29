@@ -1,0 +1,89 @@
+
+/* Class = "UILabel"; text = "Ahmed"; ObjectID = "0KF-Qr-7I8"; */
+"0KF-Qr-7I8.text" = "Ahmed";
+
+/* Class = "UILabel"; text = "50 K.D"; ObjectID = "0Zg-mF-RmO"; */
+"0Zg-mF-RmO.text" = "50 K.D";
+
+/* Class = "UILabel"; text = " 2022 / 8 /9"; ObjectID = "5kr-5U-DMa"; */
+"5kr-5U-DMa.text" = " 2022 / 8 /9";
+
+/* Class = "UILabel"; text = "Package name"; ObjectID = "BZg-u2-1Bb"; */
+"BZg-u2-1Bb.text" = "اسم الباقه";
+
+/* Class = "UILabel"; text = "Start date"; ObjectID = "Gt3-KR-l8s"; */
+"Gt3-KR-l8s.text" = "تاريخ البدء";
+
+/* Class = "UILabel"; text = "Subscribed successfully"; ObjectID = "I9A-3d-QdI"; */
+"I9A-3d-QdI.text" = "تم الاشتراك بنجاح";
+
+/* Class = "UILabel"; text = " 2022 / 8 /9"; ObjectID = "JB2-J2-zx4"; */
+"JB2-J2-zx4.text" = " 2022 / 8 /9";
+
+/* Class = "UILabel"; text = "Golden"; ObjectID = "Jxy-qG-PGa"; */
+"Jxy-qG-PGa.text" = "Golden";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "L54-qo-Pfw"; */
+"L54-qo-Pfw.text" = "الاسم";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "MTi-kk-oX6"; */
+"MTi-kk-oX6.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = " 2022 / 8 /9"; ObjectID = "NZf-Gh-RCG"; */
+"NZf-Gh-RCG.text" = " 2022 / 8 /9";
+
+/* Class = "UILabel"; text = "Choose the sections you want to subscribe"; ObjectID = "PG3-NK-0l1"; */
+"PG3-NK-0l1.text" = "اختر الاقسام التى ترغب الاشتراك بها";
+
+/* Class = "UILabel"; text = "Payment"; ObjectID = "ZHr-0P-36e"; */
+"ZHr-0P-36e.text" = "الدفع";
+
+/* Class = "UILabel"; text = "Sale auction"; ObjectID = "aa5-Rj-3Uf"; */
+"aa5-Rj-3Uf.text" = "Sale auction";
+
+/* Class = "UILabel"; text = "Auction type"; ObjectID = "c04-bQ-Noq"; */
+"c04-bQ-Noq.text" = "النوع";
+
+/* Class = "UILabel"; text = "Subscriptions"; ObjectID = "cL7-5p-0Q0"; */
+"cL7-5p-0Q0.text" = "الاشتراكات";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "djx-Xy-Z3l"; */
+"djx-Xy-Z3l.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = "50 K.D"; ObjectID = "i2i-hG-H6q"; */
+"i2i-hG-H6q.text" = "50 K.D";
+
+/* Class = "UILabel"; text = "Expire date"; ObjectID = "iE0-D2-i65"; */
+"iE0-D2-i65.text" = "تاريخ الانتهاء";
+
+/* Class = "UILabel"; text = "Total price"; ObjectID = "ilC-LG-mbP"; */
+"ilC-LG-mbP.text" = "المبلغ";
+
+/* Class = "UILabel"; text = "Expire date"; ObjectID = "jLm-w5-ltf"; */
+"jLm-w5-ltf.text" = "تاريخ الانتهاء";
+
+/* Class = "UILabel"; text = "Subscription failed, try again"; ObjectID = "k2Q-xI-kxE"; */
+"k2Q-xI-kxE.text" = "فشل الاشتراك .. حاول مره اخري";
+
+/* Class = "UILabel"; text = "Ahmed"; ObjectID = "lFH-Lu-br4"; */
+"lFH-Lu-br4.text" = "Ahmed";
+
+/* Class = "UILabel"; text = "Payment"; ObjectID = "lrv-Eu-JQm"; */
+"lrv-Eu-JQm.text" = "الدفع";
+
+/* Class = "UIButton"; normalTitle = "Back to home"; ObjectID = "mUF-ZT-ylf"; */
+"mUF-ZT-ylf.normalTitle" = "عودة للرئيسيه";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "rxR-hh-vNp"; */
+"rxR-hh-vNp.text" = "الاسم";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "s4b-a9-K0q"; */
+"s4b-a9-K0q.normalTitle" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "Back to home"; ObjectID = "t8I-8z-EAd"; */
+"t8I-8z-EAd.normalTitle" = "عودة للرئيسيه";
+
+/* Class = "UILabel"; text = "Total price"; ObjectID = "zLL-Go-axp"; */
+"zLL-Go-axp.text" = "المبلغ";
+
+

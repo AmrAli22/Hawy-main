@@ -1,0 +1,46 @@
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "5W1-tN-VpT"; */
+"5W1-tN-VpT.placeholder" = "ادخل الاسم";
+
+/* Class = "UITextField"; placeholder = "Enter your phone number"; ObjectID = "8mf-A1-HIO"; */
+"8mf-A1-HIO.placeholder" = "ادخل رقم الجوال";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Blh-uM-Lwu"; */
+"Blh-uM-Lwu.text" = "Label";
+
+/* Class = "UILabel"; text = "About US"; ObjectID = "NYQ-2K-7Ea"; */
+"NYQ-2K-7Ea.text" = "من نحن";
+
+/* Class = "UILabel"; text = "Common questions"; ObjectID = "Ngm-pb-KkP"; */
+"Ngm-pb-KkP.text" = "الاسئلة الشائعة";
+
+/* Class = "UIButton"; normalTitle = "Save Edites"; ObjectID = "Tpe-JM-y6u"; */
+"Tpe-JM-y6u.normalTitle" = "حفظ التعديلات";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "WSg-ae-fMN"; */
+"WSg-ae-fMN.text" = "English";
+
+/* Class = "UILabel"; text = "Contact US"; ObjectID = "XKa-uO-KWC"; */
+"XKa-uO-KWC.text" = "تواصل معنا";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "ayd-7d-H6q"; */
+"ayd-7d-H6q.normalTitle" = "ارسال";
+
+/* Class = "UILabel"; text = "Terms And Conditions"; ObjectID = "gPz-P1-PvY"; */
+"gPz-P1-PvY.text" = "الشروط والاحكام";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iBL-FX-KTJ"; */
+"iBL-FX-KTJ.text" = "Label";
+
+/* Class = "UILabel"; text = "Arabic"; ObjectID = "l2K-M1-eMv"; */
+"l2K-M1-eMv.text" = "عربي";
+
+/* Class = "UILabel"; text = "App Language"; ObjectID = "zWU-Yn-3jL"; */
+"zWU-Yn-3jL.text" = "لغة التطبيق";
+
+
+"P1n-tx-O2M.text" = "الباقات";
+"jaw-Ir-rYB.text" = "تاريخ الانتهاء:";
+"cgS-iV-Mbw.text" = "التصنيفات:";
+"bCe-Rs-vkM.normalTitle" = "تجديد";
+"h4o-Td-Cqw.normalTitle" = "تغيير";

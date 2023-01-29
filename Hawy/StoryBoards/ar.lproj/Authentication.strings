@@ -1,0 +1,93 @@
+
+/* Class = "UILabel"; text = "ــــــــــــــ"; ObjectID = "38T-SL-0Ug"; */
+"38T-SL-0Ug.text" = "ــــــــــــــ";
+
+/* Class = "UIButton"; normalTitle = "Start now"; ObjectID = "3fG-sn-udP"; */
+"3fG-sn-udP.normalTitle" = "ابدا الآن";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "3n0-2P-Riu"; */
+"3n0-2P-Riu.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "4BK-pU-pVO"; */
+"4BK-pU-pVO.normalTitle" = "انشاء حساب";
+
+/* Class = "UILabel"; text = "1:0"; ObjectID = "4Jq-MJ-1mJ"; */
+"4Jq-MJ-1mJ.text" = "1:0";
+
+/* Class = "UIButton"; normalTitle = "Guest"; ObjectID = "5WV-Ag-iDB"; */
+"5WV-Ag-iDB.normalTitle" = "كزائر";
+
+/* Class = "UILabel"; text = "Agree to"; ObjectID = "5pv-bY-pcc"; */
+"5pv-bY-pcc.text" = "اوافق علي";
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "6Fe-a1-6D7"; */
+"6Fe-a1-6D7.placeholder" = "ادخل اسمك";
+
+/* Class = "UILabel"; text = "Enter 4-digit code that you received on your number"; ObjectID = "6wQ-zc-l3Q"; */
+"6wQ-zc-l3Q.text" = "أدخل الرمز المكون من 4 أرقام الذي تلقيته على رقمك";
+
+/* Class = "UILabel"; text = "Continue as "; ObjectID = "7cG-ND-Zfc"; */
+"7cG-ND-Zfc.text" = "متابعة التصفح ";
+
+/* Class = "UILabel"; text = "ــــــــــــــ"; ObjectID = "B4K-h7-Y1I"; */
+"B4K-h7-Y1I.text" = "ــــــــــــــ";
+
+/* Class = "UILabel"; text = "ــــــــــــــ"; ObjectID = "Bog-2z-T9H"; */
+"Bog-2z-T9H.text" = "ــــــــــــــ";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "FsT-Ti-GFA"; */
+"FsT-Ti-GFA.text" = "تسجيل الدخول";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "GGz-0F-8S8"; */
+"GGz-0F-8S8.normalTitle" = "التالي";
+
+/* Class = "UITextField"; placeholder = "Enter your phone number"; ObjectID = "GmF-rg-J8a"; */
+"GmF-rg-J8a.placeholder" = "ادخل رقم الجوال";
+
+/* Class = "UIButton"; normalTitle = "Resend code"; ObjectID = "Go7-Td-mKc"; */
+"Go7-Td-mKc.normalTitle" = "اعاده ارسال الكود";
+
+/* Class = "UIButton"; normalTitle = "the terms and confition"; ObjectID = "KNV-O9-TOo"; */
+"KNV-O9-TOo.normalTitle" = "الشروط والاحكام";
+
+/* Class = "UILabel"; text = "Continue as "; ObjectID = "Khx-NO-rlP"; */
+"Khx-NO-rlP.text" = "متابعه التصفح ";
+
+/* Class = "UILabel"; text = "ــــــــــــــ"; ObjectID = "LI8-hL-hHo"; */
+"LI8-hL-hHo.text" = "ــــــــــــــ";
+
+/* Class = "UITextField"; placeholder = "*"; ObjectID = "Mp9-95-OFK"; */
+"Mp9-95-OFK.placeholder" = "*";
+
+/* Class = "UILabel"; text = "Verify the number"; ObjectID = "Pgp-tT-mgx"; */
+"Pgp-tT-mgx.text" = "التحقق من الرقم";
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "Qp3-SO-jAe"; */
+"Qp3-SO-jAe.placeholder" = "ادخل الاسم";
+
+/* Class = "UITextField"; placeholder = "*"; ObjectID = "WBz-7N-0ih"; */
+"WBz-7N-0ih.placeholder" = "*";
+
+/* Class = "UITextField"; placeholder = "*"; ObjectID = "cFm-M1-W2P"; */
+"cFm-M1-W2P.placeholder" = "*";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "cPh-FG-sZc"; */
+"cPh-FG-sZc.text" = "تسجيل لدخول";
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "hSY-N4-SAc"; */
+"hSY-N4-SAc.text" = "انشاء حساب";
+
+/* Class = "UITextField"; placeholder = "*"; ObjectID = "idH-fL-ajJ"; */
+"idH-fL-ajJ.placeholder" = "*";
+
+/* Class = "UILabel"; text = "+966324684014"; ObjectID = "oHe-Bf-rPW"; */
+"oHe-Bf-rPW.text" = "+966324684014";
+
+/* Class = "UITextField"; placeholder = "Enter your phone number"; ObjectID = "ojH-Eo-yf7"; */
+"ojH-Eo-yf7.placeholder" = "ادخل رقم الجوال";
+
+/* Class = "UIButton"; normalTitle = "Guest"; ObjectID = "rKl-SI-pEF"; */
+"rKl-SI-pEF.normalTitle" = "كزائر";
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "tPD-Er-hjr"; */
+"tPD-Er-hjr.text" = "انشاء حساب";

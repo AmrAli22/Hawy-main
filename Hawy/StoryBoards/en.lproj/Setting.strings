@@ -1,0 +1,46 @@
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "5W1-tN-VpT"; */
+"5W1-tN-VpT.placeholder" = "Enter your name";
+
+/* Class = "UITextField"; placeholder = "Enter your phone number"; ObjectID = "8mf-A1-HIO"; */
+"8mf-A1-HIO.placeholder" = "Enter your phone number";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Blh-uM-Lwu"; */
+"Blh-uM-Lwu.text" = "Label";
+
+/* Class = "UILabel"; text = "About US"; ObjectID = "NYQ-2K-7Ea"; */
+"NYQ-2K-7Ea.text" = "About US";
+
+/* Class = "UILabel"; text = "Common questions"; ObjectID = "Ngm-pb-KkP"; */
+"Ngm-pb-KkP.text" = "Common questions";
+
+/* Class = "UIButton"; normalTitle = "Save Edites"; ObjectID = "Tpe-JM-y6u"; */
+"Tpe-JM-y6u.normalTitle" = "Save Edites";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "WSg-ae-fMN"; */
+"WSg-ae-fMN.text" = "English";
+
+/* Class = "UILabel"; text = "Contact US"; ObjectID = "XKa-uO-KWC"; */
+"XKa-uO-KWC.text" = "Contact US";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "ayd-7d-H6q"; */
+"ayd-7d-H6q.normalTitle" = "Send";
+
+/* Class = "UILabel"; text = "Terms And Conditions"; ObjectID = "gPz-P1-PvY"; */
+"gPz-P1-PvY.text" = "Terms And Conditions";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "iBL-FX-KTJ"; */
+"iBL-FX-KTJ.text" = "Label";
+
+/* Class = "UILabel"; text = "Arabic"; ObjectID = "l2K-M1-eMv"; */
+"l2K-M1-eMv.text" = "عربي";
+
+/* Class = "UILabel"; text = "App Language"; ObjectID = "zWU-Yn-3jL"; */
+"zWU-Yn-3jL.text" = "App Language";
+
+"P1n-tx-O2M.text" = "Packages";
+"jaw-Ir-rYB.text" = "End date:";
+"cgS-iV-Mbw.text" = "Categories:";
+"bCe-Rs-vkM.normalTitle" = "Renew";
+"h4o-Td-Cqw.normalTitle" = "Change";
+

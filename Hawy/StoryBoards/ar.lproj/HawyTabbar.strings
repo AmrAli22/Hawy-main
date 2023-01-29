@@ -1,0 +1,140 @@
+
+/* Class = "UILabel"; text = "My Cards"; ObjectID = "049-2U-VXQ"; */
+"049-2U-VXQ.text" = "بطاقاتي";
+
+/* Class = "UILabel"; text = "All Cards"; ObjectID = "1fk-Ir-1Yc"; */
+"1fk-Ir-1Yc.text" = "كل البطاقات";
+
+/* Class = "UILabel"; text = "Live Auction"; ObjectID = "1tk-SN-Rsm"; */
+"1tk-SN-Rsm.text" = "مزاد لايف";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "1uM-4i-WF3"; */
+"1uM-4i-WF3.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Vaccinations"; ObjectID = "2Cx-1d-IKd"; */
+"2Cx-1d-IKd.text" = "التطعيمات";
+
+/* Class = "UILabel"; text = "Common questions"; ObjectID = "75W-iF-lvZ"; */
+"75W-iF-lvZ.text" = "الأسئله الشائعه";
+
+/* Class = "UILabel"; text = "Add new card"; ObjectID = "AMr-aD-St0"; */
+"AMr-aD-St0.text" = "إضافه بطاقه جديده";
+
+/* Class = "UITextField"; placeholder = "ad address"; ObjectID = "BIV-K6-ZCd"; */
+"BIV-K6-ZCd.placeholder" = "عنوان الاعلان";
+
+/* Class = "UIButton"; normalTitle = "Publish ad"; ObjectID = "BeU-EW-4Y1"; */
+"BeU-EW-4Y1.normalTitle" = "نشر الاعلان";
+
+/* Class = "UILabel"; text = "Card status"; ObjectID = "CGn-nd-Tus"; */
+"CGn-nd-Tus.text" = "حالة البطاقه";
+
+/* Class = "UILabel"; text = "Add ad"; ObjectID = "D5v-ot-2Yg"; */
+"D5v-ot-2Yg.text" = "إضافه اعلان";
+
+/* Class = "UILabel"; text = "My profile"; ObjectID = "EJr-7Q-1Em"; */
+"EJr-7Q-1Em.text" = "حسابي";
+
+/* Class = "UILabel"; text = "قسم الطيور"; ObjectID = "EbF-DA-heE"; */
+"EbF-DA-heE.text" = "قسم الطيور";
+
+/* Class = "UILabel"; text = "Terms And Conditions"; ObjectID = "GPg-dn-3mc"; */
+"GPg-dn-3mc.text" = "الشروط والاحكام";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "HRF-G2-Eix"; */
+"HRF-G2-Eix.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Mother name"; ObjectID = "I7T-V1-AJR"; */
+"I7T-V1-AJR.text" = "اسم الام";
+
+/* Class = "UILabel"; text = "App language"; ObjectID = "J4i-o0-o2b"; */
+"J4i-o0-o2b.text" = "لغه التطبيق";
+
+/* Class = "UILabel"; text = "Available with"; ObjectID = "JFN-fD-Xz9"; */
+"JFN-fD-Xz9.text" = "متاح مع";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "JjD-fI-dz2"; */
+"JjD-fI-dz2.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Contact us"; ObjectID = "Kes-fG-GbF"; */
+"Kes-fG-GbF.text" = "تواصل معنا";
+
+/* Class = "UILabel"; text = "Share App"; ObjectID = "MIH-Vb-jcv"; */
+"MIH-Vb-jcv.text" = "شارك التطبيق";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "N2v-b4-bgw"; */
+"N2v-b4-bgw.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "All Cards"; ObjectID = "N56-bb-TuP"; */
+"N56-bb-TuP.text" = "كل البطاقات";
+
+/* Class = "UILabel"; text = "Property sequance"; ObjectID = "PVi-dh-Xhx"; */
+"PVi-dh-Xhx.text" = "تسلسل الملكيه";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "PYE-WF-lUc"; */
+"PYE-WF-lUc.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "About US"; ObjectID = "SGM-xW-lKK"; */
+"SGM-xW-lKK.text" = "من نحن";
+
+/* Class = "UILabel"; text = "Packages"; ObjectID = "Sjy-P8-o5y"; */
+"Sjy-P8-o5y.text" = "الباقات";
+
+/* Class = "UILabel"; text = "Finger print"; ObjectID = "T9C-Tv-4WM"; */
+"T9C-Tv-4WM.text" = "تفعيل الدخول بالبصمه";
+
+/* Class = "UILabel"; text = "My Auctions"; ObjectID = "Vsx-Ca-NvW"; */
+"Vsx-Ca-NvW.text" = "مزاداتي";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "dNf-ni-5IJ"; */
+"dNf-ni-5IJ.text" = "العمر";
+
+/* Class = "UILabel"; text = "Add  new ad"; ObjectID = "eP0-lU-gFJ"; */
+"eP0-lU-gFJ.text" = "اضافه اعلان جديد";
+
+/* Class = "UILabel"; text = "Sale Auction"; ObjectID = "f4h-w8-Uck"; */
+"f4h-w8-Uck.text" = "مزاد بيعه";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "gNT-Mi-Sep"; */
+"gNT-Mi-Sep.text" = "النوع";
+
+/* Class = "UILabel"; text = "Logout"; ObjectID = "hky-wP-Mhx"; */
+"hky-wP-Mhx.text" = "تسجيل الخروج";
+
+/* Class = "UILabel"; text = "Add new Add"; ObjectID = "iPG-yS-gTG"; */
+"iPG-yS-gTG.text" = "اضافه اعلان جديد";
+
+/* Class = "UILabel"; text = "Choose Ad cards"; ObjectID = "juP-7f-GHk"; */
+"juP-7f-GHk.text" = "اختر بطاقه الاعلان";
+
+/* Class = "UILabel"; text = "All Cards"; ObjectID = "o42-Y2-HrS"; */
+"o42-Y2-HrS.text" = "كل البطاقات";
+
+/* Class = "UILabel"; text = "My ads"; ObjectID = "oHU-xJ-fkF"; */
+"oHU-xJ-fkF.text" = "اعلاناتي";
+
+/* Class = "UILabel"; text = "Auctions"; ObjectID = "tFh-HC-hmO"; */
+"tFh-HC-hmO.text" = "المزادات";
+
+/* Class = "UILabel"; text = " الطيور - حمام"; ObjectID = "utO-UT-hOU"; */
+"utO-UT-hOU.text" = "";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "vB4-hO-Lgj"; */
+"vB4-hO-Lgj.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+
+/* Class = "UITextField"; placeholder = "add content ad here"; ObjectID = "vnt-P3-qlq"; */
+"vnt-P3-qlq.placeholder" = "اكتب محتوي اعلانك هنا";
+
+/* Class = "UILabel"; text = "Father name"; ObjectID = "wWn-WC-2hZ"; */
+"wWn-WC-2hZ.text" = "اسم الاب";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "xPc-tV-aOg"; */
+"xPc-tV-aOg.text" = "الاعدادات";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "zfs-5T-rjK"; */
+"zfs-5T-rjK.text" = "اسم الحيوان";
+
+"1du-9z-MSc.text" = "بواسطة";
+"XrW-PC-8In.normalTitle" = "مجموعة ريسي";
+
+"6E1-4B-9Wv.normalTitle" = "اضف بطاقة";

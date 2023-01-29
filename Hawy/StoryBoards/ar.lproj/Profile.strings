@@ -1,0 +1,520 @@
+
+/* Class = "UILabel"; text = "Lost Card"; ObjectID = "0D1-OH-UAJ"; */
+"0D1-OH-UAJ.text" = "البطاقة مفقودة";
+
+///* Class = "UILabel"; text = "Available with"; ObjectID = "1ts-xD-7Ne"; */
+//"1ts-xD-7Ne.text" = "Available with";
+//
+///* Class = "UITextField"; placeholder = "Enter anmial name"; ObjectID = "2gZ-P7-qku"; */
+//"2gZ-P7-qku.placeholder" = "Enter anmial name";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "2mv-WV-0lW"; */
+//"2mv-WV-0lW.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Upload image / video"; ObjectID = "5do-xX-Zqs"; */
+//"5do-xX-Zqs.text" = "Upload image / video";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "5nU-T3-Z05"; */
+//"5nU-T3-Z05.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Upload 3 Photos / 1 Video"; ObjectID = "5uN-kf-TT1"; */
+//"5uN-kf-TT1.text" = "Upload 3 Photos / 1 Video";
+//
+///* Class = "UIButton"; normalTitle = "Show the result (16)"; ObjectID = "6q8-iP-aLc"; */
+//"6q8-iP-aLc.normalTitle" = "Show the result (16)";
+//
+///* Class = "UILabel"; text = "Edite data"; ObjectID = "72b-NF-A4t"; */
+//"72b-NF-A4t.text" = "Edite data";
+//
+///* Class = "UILabel"; text = "Age"; ObjectID = "7Jg-xb-YAF"; */
+//"7Jg-xb-YAF.text" = "Age";
+//
+///* Class = "UILabel"; text = "Add Card"; ObjectID = "83Y-NM-JdM"; */
+//"83Y-NM-JdM.text" = "Add Card";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "8Hk-tq-HmE"; */
+//"8Hk-tq-HmE.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "8Te-r8-fAP"; */
+//"8Te-r8-fAP.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Card status"; ObjectID = "8mn-jY-SeM"; */
+//"8mn-jY-SeM.text" = "Card status";
+//
+///* Class = "UILabel"; text = "Available"; ObjectID = "963-gl-hzC"; */
+//"963-gl-hzC.text" = "Available";
+//
+///* Class = "UILabel"; text = "Age"; ObjectID = "9cI-WE-fMM"; */
+//"9cI-WE-fMM.text" = "Age";
+//
+///* Class = "UILabel"; text = "Vaccinations"; ObjectID = "9dC-dJ-OtC"; */
+//"9dC-dJ-OtC.text" = "Vaccinations";
+//
+///* Class = "UILabel"; text = "Mother name"; ObjectID = "Aag-zN-S9u"; */
+//"Aag-zN-S9u.text" = "Mother name";
+//
+///* Class = "UIButton"; normalTitle = "Next"; ObjectID = "C1l-Gg-4gf"; */
+//"C1l-Gg-4gf.normalTitle" = "Next";
+//
+///* Class = "UILabel"; text = "Edite Card"; ObjectID = "DCK-38-Jgw"; */
+//"DCK-38-Jgw.text" = "Edite Card";
+//
+///* Class = "UILabel"; text = "Vaccinations"; ObjectID = "Dfg-kk-W8A"; */
+//"Dfg-kk-W8A.text" = "Vaccinations";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "EtF-h3-mhz"; */
+//"EtF-h3-mhz.text" = "Animal name";
+//
+///* Class = "UITextField"; placeholder = "Enter the age"; ObjectID = "GQw-IC-Up5"; */
+//"GQw-IC-Up5.placeholder" = "Enter the age";
+//
+///* Class = "UILabel"; text = "Card status"; ObjectID = "HX9-bW-1Pi"; */
+//"HX9-bW-1Pi.text" = "Card status";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "I1a-x2-aCn"; */
+//"I1a-x2-aCn.text" = "Animal name";
+//
+///* Class = "UITextField"; placeholder = "Enter father name"; ObjectID = "I8G-5g-3tE"; */
+//"I8G-5g-3tE.placeholder" = "Enter father name";
+//
+///* Class = "UILabel"; text = "Upload 3 Photos / 1 Video"; ObjectID = "JEv-51-xfH"; */
+//"JEv-51-xfH.text" = "Upload 3 Photos / 1 Video";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "JRT-Xg-zFD"; */
+//"JRT-Xg-zFD.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Available with"; ObjectID = "K0K-Dn-d3r"; */
+//"K0K-Dn-d3r.text" = "Available with";
+//
+///* Class = "UILabel"; text = "Ahmed"; ObjectID = "KGa-Dm-qRi"; */
+//"KGa-Dm-qRi.text" = "Ahmed";
+//
+///* Class = "UIButton"; normalTitle = "Update"; ObjectID = "L7c-zl-MyG"; */
+//"L7c-zl-MyG.normalTitle" = "Update";
+//
+///* Class = "UITextField"; placeholder = "Enter your phone number"; ObjectID = "Lhu-Lh-7en"; */
+//"Lhu-Lh-7en.placeholder" = "Enter your phone number";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "Ms0-lp-AA3"; */
+//"Ms0-lp-AA3.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Available"; ObjectID = "NpS-rq-t1j"; */
+//"NpS-rq-t1j.text" = "Available";
+//
+///* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "Nx8-2Z-QVV"; */
+//"Nx8-2Z-QVV.placeholder" = "Enter your name";
+//
+///* Class = "UILabel"; text = "Card status"; ObjectID = "OHY-lY-u6O"; */
+//"OHY-lY-u6O.text" = "Card status";
+//
+///* Class = "UITextField"; placeholder = "Enter anmial name"; ObjectID = "OHd-IR-L2J"; */
+//"OHd-IR-L2J.placeholder" = "Enter anmial name";
+//
+///* Class = "UITextField"; placeholder = "Enter mother name"; ObjectID = "Pko-i3-tYW"; */
+//"Pko-i3-tYW.placeholder" = "Enter mother name";
+//
+///* Class = "UILabel"; text = "Type"; ObjectID = "Pvw-Nq-no0"; */
+//"Pvw-Nq-no0.text" = "Type";
+//
+///* Class = "UILabel"; text = "Upload the video"; ObjectID = "Q2P-xb-FKO"; */
+//"Q2P-xb-FKO.text" = "Upload the video";
+//
+///* Class = "UILabel"; text = "Enter the mobile number of the person you wigh to transfere the card ownership to"; ObjectID = "Rix-GG-uCf"; */
+//"Rix-GG-uCf.text" = "Enter the mobile number of the person you wigh to transfere the card ownership to";
+//
+///* Class = "UITextField"; placeholder = "Enter mother name"; ObjectID = "RqL-ld-RuU"; */
+//"RqL-ld-RuU.placeholder" = "Enter mother name";
+//
+///* Class = "UITextField"; placeholder = "Enter owner name"; ObjectID = "SF1-gG-j4M"; */
+//"SF1-gG-j4M.placeholder" = "Enter owner name";
+//
+///* Class = "UILabel"; text = "Edite attachments"; ObjectID = "SVi-hR-RKu"; */
+//"SVi-hR-RKu.text" = "Edite attachments";
+//
+///* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Tdd-Eg-fZB"; */
+//"Tdd-Eg-fZB.normalTitle" = "Next";
+//
+///* Class = "UIButton"; normalTitle = "Change Photo"; ObjectID = "Tkn-5V-5uF"; */
+//"Tkn-5V-5uF.normalTitle" = "Change Photo";
+//
+///* Class = "UITextField"; placeholder = "Enter your phone number"; ObjectID = "Ugk-4n-SiO"; */
+//"Ugk-4n-SiO.placeholder" = "Enter your phone number";
+//
+///* Class = "UITextField"; placeholder = "Enter the age"; ObjectID = "Vcv-IV-ean"; */
+//"Vcv-IV-ean.placeholder" = "Enter the age";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "Xf5-Jw-EZY"; */
+//"Xf5-Jw-EZY.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Upload the video"; ObjectID = "Xnl-Q3-nva"; */
+//"Xnl-Q3-nva.text" = "Upload the video";
+//
+///* Class = "UILabel"; text = "Profile"; ObjectID = "aG2-ID-sJr"; */
+//"aG2-ID-sJr.text" = "Profile";
+//
+///* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "aKD-Ml-ftc"; */
+//"aKD-Ml-ftc.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+//
+///* Class = "UILabel"; text = "Upload image / video"; ObjectID = "acK-3v-arv"; */
+//"acK-3v-arv.text" = "Upload image / video";
+//
+///* Class = "UILabel"; text = "Property sequance"; ObjectID = "bjs-Or-qgr"; */
+//"bjs-Or-qgr.text" = "Property sequance";
+//
+///* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "cCo-73-4YO"; */
+//"cCo-73-4YO.placeholder" = "Enter your name";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "cJA-Z8-v6j"; */
+//"cJA-Z8-v6j.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Upload the main image"; ObjectID = "cZ1-GB-UOY"; */
+//"cZ1-GB-UOY.text" = "Upload the main image";
+//
+///* Class = "UILabel"; text = "Transfer of ownership card"; ObjectID = "d3p-Yg-GqJ"; */
+//"d3p-Yg-GqJ.text" = "Transfer of ownership card";
+//
+///* Class = "UILabel"; text = "Type"; ObjectID = "e2h-Y2-ZmU"; */
+//"e2h-Y2-ZmU.text" = "Type";
+//
+///* Class = "UIButton"; normalTitle = "Update"; ObjectID = "e8b-Eo-UuA"; */
+//"e8b-Eo-UuA.normalTitle" = "Update";
+//
+///* Class = "UIButton"; normalTitle = "Select the type"; ObjectID = "eJD-sS-C0l"; */
+//"eJD-sS-C0l.normalTitle" = "Select the type";
+//
+///* Class = "UILabel"; text = "Transfere of ownership card"; ObjectID = "eQH-ES-kbR"; */
+//"eQH-ES-kbR.text" = "Transfere of ownership card";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "geE-EK-EWF"; */
+//"geE-EK-EWF.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Upload the main image"; ObjectID = "hV6-AP-Cb5"; */
+//"hV6-AP-Cb5.text" = "Upload the main image";
+//
+///* Class = "UILabel"; text = "Father name"; ObjectID = "ihX-hQ-qM8"; */
+//"ihX-hQ-qM8.text" = "Father name";
+//
+///* Class = "UILabel"; text = "Property sequance"; ObjectID = "kAA-7u-iuA"; */
+//"kAA-7u-iuA.text" = "Property sequance";
+//
+///* Class = "UITextField"; placeholder = "Enter the type"; ObjectID = "ke0-C3-Hpl"; */
+//"ke0-C3-Hpl.placeholder" = "Enter the type";
+//
+///* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "lPa-QQ-yhp"; */
+//"lPa-QQ-yhp.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+//
+///* Class = "UIButton"; normalTitle = "Save"; ObjectID = "lTs-qA-Irx"; */
+//"lTs-qA-Irx.normalTitle" = "Save";
+//
+///* Class = "UILabel"; text = "Father name"; ObjectID = "lWZ-8e-lsh"; */
+//"lWZ-8e-lsh.text" = "Father name";
+//
+///* Class = "UITextField"; placeholder = "Enter the type"; ObjectID = "m2m-w0-p7U"; */
+//"m2m-w0-p7U.placeholder" = "Enter the type";
+//
+///* Class = "UIButton"; normalTitle = "Choose"; ObjectID = "mDB-t5-o4Z"; */
+//"mDB-t5-o4Z.normalTitle" = "Choose";
+//
+///* Class = "UILabel"; text = "Add Card"; ObjectID = "nFd-CH-IJg"; */
+//"nFd-CH-IJg.text" = "Add Card";
+//
+///* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "nyW-cR-EVO"; */
+//"nyW-cR-EVO.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+//
+///* Class = "UILabel"; text = "Card status"; ObjectID = "p0G-cQ-2h0"; */
+//"p0G-cQ-2h0.text" = "Card status";
+//
+///* Class = "UILabel"; text = "Transfer of ownership card"; ObjectID = "qGD-EV-v7W"; */
+//"qGD-EV-v7W.text" = "Transfer of ownership card";
+//
+///* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "soj-Jq-v8K"; */
+//"soj-Jq-v8K.placeholder" = "Enter your name";
+//
+///* Class = "UILabel"; text = "Change Photo"; ObjectID = "t9q-VI-qEb"; */
+//"t9q-VI-qEb.text" = "Change Photo";
+//
+///* Class = "UITextField"; placeholder = "Enter father name"; ObjectID = "tdU-zD-ecH"; */
+//"tdU-zD-ecH.placeholder" = "Enter father name";
+//
+///* Class = "UILabel"; text = "Mother name"; ObjectID = "uNr-2c-hB2"; */
+//"uNr-2c-hB2.text" = "Mother name";
+//
+///* Class = "UILabel"; text = "Animal name"; ObjectID = "wOv-MC-hhd"; */
+//"wOv-MC-hhd.text" = "Animal name";
+//
+///* Class = "UILabel"; text = "Edite Card"; ObjectID = "xIT-DL-T16"; */
+//"xIT-DL-T16.text" = "Edite Card";
+//
+///* Class = "UITextField"; placeholder = "Enter vaccenation name"; ObjectID = "y69-79-lQX"; */
+//"y69-79-lQX.placeholder" = "Enter vaccenation name";
+//
+///* Class = "UITextField"; placeholder = "Enter vaccenation name"; ObjectID = "zQO-Wr-mJF"; */
+//"zQO-Wr-mJF.placeholder" = "Enter vaccenation name";
+//
+///* Class = "UITextField"; placeholder = "Enter owner name"; ObjectID = "zj5-7j-Ask"; */
+//"zj5-7j-Ask.placeholder" = "Enter owner name";
+//
+///* Class = "UILabel"; text = "Delete"; ObjectID = "znl-UR-G6e"; */
+//"znl-UR-G6e.text" = "Delete";
+
+////////////////////////////////////////////////////////////////////////
+
+
+/* Class = "UILabel"; text = "Available with"; ObjectID = "1ts-xD-7Ne"; */
+"1ts-xD-7Ne.text" = "متاح مع";
+
+/* Class = "UITextField"; placeholder = "Enter anmial name"; ObjectID = "2gZ-P7-qku"; */
+"2gZ-P7-qku.placeholder" = "ادخل اسم الحيوان";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "2mv-WV-0lW"; */
+"2mv-WV-0lW.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Upload image / video"; ObjectID = "5do-xX-Zqs"; */
+"5do-xX-Zqs.text" = "ارفع صوره / فيديو";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "5nU-T3-Z05"; */
+"5nU-T3-Z05.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Upload 3 Photos / 1 Video"; ObjectID = "5uN-kf-TT1"; */
+"5uN-kf-TT1.text" = "ارفع ٣ صور / ١ فيديو";
+
+/* Class = "UIButton"; normalTitle = "Show the result (16)"; ObjectID = "6q8-iP-aLc"; */
+"6q8-iP-aLc.normalTitle" = "اظهر النتائج";
+
+/* Class = "UILabel"; text = "Edite data"; ObjectID = "72b-NF-A4t"; */
+"72b-NF-A4t.text" = "تعديل البيانات";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "7Jg-xb-YAF"; */
+"7Jg-xb-YAF.text" = "العمر";
+
+/* Class = "UILabel"; text = "Add Card"; ObjectID = "83Y-NM-JdM"; */
+"83Y-NM-JdM.text" = "اضف بطاقه";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "8Hk-tq-HmE"; */
+"8Hk-tq-HmE.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "8Te-r8-fAP"; */
+"8Te-r8-fAP.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Card status"; ObjectID = "8mn-jY-SeM"; */
+"8mn-jY-SeM.text" = "حاله البطاقه";
+
+/* Class = "UILabel"; text = "Available"; ObjectID = "963-gl-hzC"; */
+"963-gl-hzC.text" = "متاح";
+
+/* Class = "UILabel"; text = "Age"; ObjectID = "9cI-WE-fMM"; */
+"9cI-WE-fMM.text" = "العمر";
+
+/* Class = "UILabel"; text = "Vaccinations"; ObjectID = "9dC-dJ-OtC"; */
+"9dC-dJ-OtC.text" = "التطعيمات";
+
+/* Class = "UILabel"; text = "Mother name"; ObjectID = "Aag-zN-S9u"; */
+"Aag-zN-S9u.text" = "اسم الام";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "C1l-Gg-4gf"; */
+"C1l-Gg-4gf.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = "Edite Card"; ObjectID = "DCK-38-Jgw"; */
+"DCK-38-Jgw.text" = "تعديل البطاقه";
+
+/* Class = "UILabel"; text = "Vaccinations"; ObjectID = "Dfg-kk-W8A"; */
+"Dfg-kk-W8A.text" = "التطعيمات";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "EtF-h3-mhz"; */
+"EtF-h3-mhz.text" = "اسم الحيوان";
+
+/* Class = "UITextField"; placeholder = "Enter the age"; ObjectID = "GQw-IC-Up5"; */
+"GQw-IC-Up5.placeholder" = "ادخل العمر";
+
+/* Class = "UILabel"; text = "Card status"; ObjectID = "HX9-bW-1Pi"; */
+"HX9-bW-1Pi.text" = "حاله البطاقه";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "I1a-x2-aCn"; */
+"I1a-x2-aCn.text" = "اسم الحيوان";
+
+/* Class = "UITextField"; placeholder = "Enter father name"; ObjectID = "I8G-5g-3tE"; */
+"I8G-5g-3tE.placeholder" = "ادخل اسم الاب";
+
+/* Class = "UILabel"; text = "Upload 3 Photos / 1 Video"; ObjectID = "JEv-51-xfH"; */
+"JEv-51-xfH.text" = "ارفع ٣ صور / ١ فيديو";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "JRT-Xg-zFD"; */
+"JRT-Xg-zFD.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Available with"; ObjectID = "K0K-Dn-d3r"; */
+"K0K-Dn-d3r.text" = "متاح مع";
+
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "L7c-zl-MyG"; */
+"L7c-zl-MyG.normalTitle" = "تعديل";
+
+/* Class = "UITextField"; placeholder = "Enter your phone number"; ObjectID = "Lhu-Lh-7en"; */
+"Lhu-Lh-7en.placeholder" = "ادخل رقم الجوال";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "Ms0-lp-AA3"; */
+"Ms0-lp-AA3.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Available"; ObjectID = "NpS-rq-t1j"; */
+"NpS-rq-t1j.text" = "متاح";
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "Nx8-2Z-QVV"; */
+"Nx8-2Z-QVV.placeholder" = "ادخل الاسم";
+
+/* Class = "UILabel"; text = "Card status"; ObjectID = "OHY-lY-u6O"; */
+"OHY-lY-u6O.text" = "حاله البطاقة";
+
+/* Class = "UITextField"; placeholder = "Enter anmial name"; ObjectID = "OHd-IR-L2J"; */
+"OHd-IR-L2J.placeholder" = "ادخل اسم الحيوان";
+
+/* Class = "UITextField"; placeholder = "Enter mother name"; ObjectID = "Pko-i3-tYW"; */
+"Pko-i3-tYW.placeholder" = "ادخل اسم الام";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "Pvw-Nq-no0"; */
+"Pvw-Nq-no0.text" = "النوع";
+
+/* Class = "UILabel"; text = "Upload the video"; ObjectID = "Q2P-xb-FKO"; */
+"Q2P-xb-FKO.text" = "ارفع فيديو";
+
+/* Class = "UILabel"; text = "Enter the mobile number of the person you wigh to transfere the card ownership to"; ObjectID = "Rix-GG-uCf"; */
+"Rix-GG-uCf.text" = "ادخل رقم جوال الشخص الذي ترغب في نقل ملكية البطاقة لة";
+
+/* Class = "UITextField"; placeholder = "Enter mother name"; ObjectID = "RqL-ld-RuU"; */
+"RqL-ld-RuU.placeholder" = "ادخل اسم الام";
+
+/* Class = "UITextField"; placeholder = "Enter owner name"; ObjectID = "SF1-gG-j4M"; */
+"SF1-gG-j4M.placeholder" = "ادخل اسم المالك";
+
+/* Class = "UILabel"; text = "Edite attachments"; ObjectID = "SVi-hR-RKu"; */
+"SVi-hR-RKu.text" = "تعديل المرفقات";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Tdd-Eg-fZB"; */
+"Tdd-Eg-fZB.normalTitle" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "Change Photo"; ObjectID = "Tkn-5V-5uF"; */
+"Tkn-5V-5uF.normalTitle" = "تغيير الصوره";
+
+/* Class = "UITextField"; placeholder = "Enter your phone number"; ObjectID = "Ugk-4n-SiO"; */
+"Ugk-4n-SiO.placeholder" = "ادخل رقم الجوال";
+
+/* Class = "UITextField"; placeholder = "Enter the age"; ObjectID = "Vcv-IV-ean"; */
+"Vcv-IV-ean.placeholder" = "ادخل العمر";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "Xf5-Jw-EZY"; */
+"Xf5-Jw-EZY.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Upload the video"; ObjectID = "Xnl-Q3-nva"; */
+"Xnl-Q3-nva.text" = "ارفع فيديو";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "aG2-ID-sJr"; */
+"aG2-ID-sJr.text" = "حسابي";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "aKD-Ml-ftc"; */
+"aKD-Ml-ftc.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+
+/* Class = "UILabel"; text = "Upload image / video"; ObjectID = "acK-3v-arv"; */
+"acK-3v-arv.text" = "ارفع صوره / فيديو";
+
+/* Class = "UILabel"; text = "Property sequance"; ObjectID = "bjs-Or-qgr"; */
+"bjs-Or-qgr.text" = "تسلسل الملكية";
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "cCo-73-4YO"; */
+"cCo-73-4YO.placeholder" = "ادخل الاسم";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "cJA-Z8-v6j"; */
+"cJA-Z8-v6j.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Upload the main image"; ObjectID = "cZ1-GB-UOY"; */
+"cZ1-GB-UOY.text" = "ارفع الصوره الرئيسية";
+
+/* Class = "UILabel"; text = "Transfer of ownership card"; ObjectID = "d3p-Yg-GqJ"; */
+"d3p-Yg-GqJ.text" = "نقل ملكية البطاقة";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "e2h-Y2-ZmU"; */
+"e2h-Y2-ZmU.text" = "النوع";
+
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "e8b-Eo-UuA"; */
+"e8b-Eo-UuA.normalTitle" = "تعديل";
+
+/* Class = "UIButton"; normalTitle = "Select the type"; ObjectID = "eJD-sS-C0l"; */
+"eJD-sS-C0l.normalTitle" = "اختار النوع";
+
+/* Class = "UILabel"; text = "Transfere of ownership card"; ObjectID = "eQH-ES-kbR"; */
+"eQH-ES-kbR.text" = "نقل ملكية البطاقة";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "geE-EK-EWF"; */
+"geE-EK-EWF.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Upload the main image"; ObjectID = "hV6-AP-Cb5"; */
+"hV6-AP-Cb5.text" = "ارفع الصوره الرئيسيه";
+
+/* Class = "UILabel"; text = "Father name"; ObjectID = "ihX-hQ-qM8"; */
+"ihX-hQ-qM8.text" = "اسم الاب";
+
+/* Class = "UILabel"; text = "Property sequance"; ObjectID = "kAA-7u-iuA"; */
+"kAA-7u-iuA.text" = "تسلسل الملكية";
+
+/* Class = "UITextField"; placeholder = "Enter the type"; ObjectID = "ke0-C3-Hpl"; */
+"ke0-C3-Hpl.placeholder" = "ادخل النوع";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "lPa-QQ-yhp"; */
+"lPa-QQ-yhp.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "lTs-qA-Irx"; */
+"lTs-qA-Irx.normalTitle" = "حفظ";
+
+/* Class = "UILabel"; text = "Father name"; ObjectID = "lWZ-8e-lsh"; */
+"lWZ-8e-lsh.text" = "اسم الاب";
+
+/* Class = "UITextField"; placeholder = "Enter the type"; ObjectID = "m2m-w0-p7U"; */
+"m2m-w0-p7U.placeholder" = "ادخل النوع";
+
+/* Class = "UIButton"; normalTitle = "Choose"; ObjectID = "mDB-t5-o4Z"; */
+"mDB-t5-o4Z.normalTitle" = "اختار";
+
+/* Class = "UILabel"; text = "Add Card"; ObjectID = "nFd-CH-IJg"; */
+"nFd-CH-IJg.text" = "اضف بطاقة";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. "; ObjectID = "nyW-cR-EVO"; */
+"nyW-cR-EVO.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. ";
+
+/* Class = "UILabel"; text = "Card status"; ObjectID = "p0G-cQ-2h0"; */
+"p0G-cQ-2h0.text" = "حاله البطاقه";
+
+/* Class = "UILabel"; text = "Transfer of ownership card"; ObjectID = "qGD-EV-v7W"; */
+"qGD-EV-v7W.text" = "نقل ملكية البطاقة";
+
+/* Class = "UITextField"; placeholder = "Enter your name"; ObjectID = "soj-Jq-v8K"; */
+"soj-Jq-v8K.placeholder" = "ادخل الاسم";
+
+/* Class = "UILabel"; text = "Change Photo"; ObjectID = "t9q-VI-qEb"; */
+"t9q-VI-qEb.text" = "تغيير الصوره";
+
+/* Class = "UITextField"; placeholder = "Enter father name"; ObjectID = "tdU-zD-ecH"; */
+"tdU-zD-ecH.placeholder" = "ادخل اسم الاب";
+
+/* Class = "UILabel"; text = "Mother name"; ObjectID = "uNr-2c-hB2"; */
+"uNr-2c-hB2.text" = "اسم الام";
+
+/* Class = "UILabel"; text = "Animal name"; ObjectID = "wOv-MC-hhd"; */
+"wOv-MC-hhd.text" = "اسم الحيوان";
+
+/* Class = "UILabel"; text = "Edite Card"; ObjectID = "xIT-DL-T16"; */
+"xIT-DL-T16.text" = "تعديل البطاقة";
+
+/* Class = "UITextField"; placeholder = "Enter vaccenation name"; ObjectID = "y69-79-lQX"; */
+"y69-79-lQX.placeholder" = "ادخل اسم التطعيم";
+
+"iuO-5Y-Wpm.placeholder" = "ادخل رقم التوثيق";
+
+"64c-38-ZBw.placeholder" = "ادخل رقم التوثيق";
+
+/* Class = "UITextField"; placeholder = "Enter vaccenation name"; ObjectID = "zQO-Wr-mJF"; */
+"zQO-Wr-mJF.placeholder" = "ادخل اسم التطعيم";
+
+/* Class = "UITextField"; placeholder = "Enter owner name"; ObjectID = "zj5-7j-Ask"; */
+"zj5-7j-Ask.placeholder" = "ادخل اسم المالك";
+
+/* Class = "UILabel"; text = "Delete"; ObjectID = "znl-UR-G6e"; */
+"znl-UR-G6e.text" = "حذف";
+
+//"0D1-OH-UAJ.text" = "البطاقة مفقودة"
+

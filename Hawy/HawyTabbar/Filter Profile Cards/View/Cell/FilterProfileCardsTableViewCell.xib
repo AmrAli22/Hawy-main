@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArbFONTS-Almarai-Regular.ttf">
+            <string>Almarai-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FilterProfileCardsTableViewCell" customModule="Hawy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PBd-Td-9jR">
+                        <rect key="frame" x="5" y="5" width="310" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPF-qL-Iyk">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrV-bT-bW5">
+                                        <rect key="frame" x="40" y="14" width="78" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Almarai-Regular" family="Almarai" pointSize="20"/>
+                                        <color key="textColor" name="PrimaryDarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TOGGLE" translatesAutoresizingMaskIntoConstraints="NO" id="0UO-4F-NK7">
+                                        <rect key="frame" x="235" y="12.5" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="5lV-n0-CDe"/>
+                                            <constraint firstAttribute="height" constant="25" id="IOK-QN-LmF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="SecondBackground"/>
+                                <constraints>
+                                    <constraint firstItem="CrV-bT-bW5" firstAttribute="leading" secondItem="nPF-qL-Iyk" secondAttribute="leading" constant="40" id="CjX-qn-HxO"/>
+                                    <constraint firstAttribute="trailing" secondItem="0UO-4F-NK7" secondAttribute="trailing" constant="50" id="Qd7-ls-MqJ"/>
+                                    <constraint firstItem="CrV-bT-bW5" firstAttribute="centerY" secondItem="nPF-qL-Iyk" secondAttribute="centerY" id="dBR-ag-uPF"/>
+                                    <constraint firstItem="0UO-4F-NK7" firstAttribute="centerY" secondItem="CrV-bT-bW5" secondAttribute="centerY" id="fU9-Pz-zix"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="PBd-Td-9jR" secondAttribute="bottom" constant="5" id="Pfx-nk-bTc"/>
+                    <constraint firstItem="PBd-Td-9jR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="TOd-CS-i3e"/>
+                    <constraint firstAttribute="trailing" secondItem="PBd-Td-9jR" secondAttribute="trailing" constant="5" id="TaK-SX-KLG"/>
+                    <constraint firstItem="PBd-Td-9jR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="x6d-Ck-Zdc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="checkImage" destination="0UO-4F-NK7" id="WlV-AN-swZ"/>
+                <outlet property="titleLabel" destination="CrV-bT-bW5" id="nUt-4D-FNl"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="74"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="TOGGLE" width="24" height="24"/>
+        <namedColor name="PrimaryDarkGray">
+            <color red="0.59600001573562622" green="0.60000002384185791" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondBackground">
+            <color red="0.93300002813339233" green="0.9570000171661377" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

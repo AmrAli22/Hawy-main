@@ -6,10 +6,5 @@
 	<true/>
 	<key>Privacy- photo Library Usage Description key</key>
 	<string>This app uses the camera to enable you upload your Images</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>fetch</string>
-		<string>processing</string>
-	</array>
 </dict>
 </plist>

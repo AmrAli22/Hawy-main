@@ -44,11 +44,47 @@ extension AuctionLiveVideo {
             if curretCard.offer?.userID == HelperConstant.getUserId() {
                 if !iamConductor {
                     winnigView.isHidden = false
+                    
+                    auctionFinalBidingStatues.isHidden = false
+                    auctionFInalBidingStatuesLabel.backgroundColor = hexStringToUIColor(hex: "#51A14F") //hexStringToUIColor: "51A14F" //51A14F
+                    auctionFInalBidingStatuesLabel.textColor  = .white
+                    auctionFInalBidingStatuesLabel.text       =  "Gongr".localized
+                    BidPriceStauesStaues.isHidden = false
+                    bidingAmountView.isHidden = true
+                    bidingActionView.isHidden = true
+                    
+                    
                 }else{
                     self.bidingActionView.isHidden = true
                     self.bidingAmountView.isHidden = true
+
+                    auctionFinalBidingStatues.isHidden = false
+                    auctionFInalBidingStatuesLabel.backgroundColor = .orange
+                    auctionFInalBidingStatuesLabel.textColor  =  .red
+                    auctionFInalBidingStatuesLabel.text       =  "AuctionEnded".localized
+                    
                 }
+                
+                
+
+            }else{
+                
+                bidingAmountView.isHidden = true
+                bidingActionView.isHidden = true
+                sendRaiseHandView.isHidden = true
+                auctionFinalBidingStatues.isHidden = false
+                auctionFInalBidingStatuesLabel.backgroundColor = hexStringToUIColor(hex: "#51A14F")
+                auctionFInalBidingStatuesLabel.textColor  = .white
+                auctionFInalBidingStatuesLabel.text       =  "BackHome".localized
+                winnigView.isHidden = true
+                BidPriceStauesStaues.isHidden = true
+                
             }
+            
+            VideoStatues = false
+            
+            bidingAmountView.isHidden = true
+            bidingActionView.isHidden = true
             
         }else if self.totalTime <= 3600 {
             
@@ -80,4 +116,26 @@ extension AuctionLiveVideo {
         
     }
     
+}
+
+func hexStringToUIColor (hex:String) -> UIColor {
+    var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+    if (cString.hasPrefix("#")) {
+        cString.remove(at: cString.startIndex)
+    }
+
+    if ((cString.count) != 6) {
+        return UIColor.gray
+    }
+
+    var rgbValue:UInt64 = 0
+    Scanner(string: cString).scanHexInt64(&rgbValue)
+
+    return UIColor(
+        red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+        green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+        blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+        alpha: CGFloat(1.0)
+    )
 }

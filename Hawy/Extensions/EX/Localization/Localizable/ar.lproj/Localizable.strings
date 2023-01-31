@@ -196,3 +196,6 @@
 "Waiting For Conductor" = "في انتظار مدلل";
 "The bidding switched to this card by the admin" = "تم تبديل المزايدة لهذا الكارت بواسطة الأدمن";
 
+"AuctionEnded" = "انتهى المزاد";
+"Gongr" = "مبروك ، لقد فزت بالمزاد";
+"BackHome" = "العودة إلى الصفحة الرئيسية" ;

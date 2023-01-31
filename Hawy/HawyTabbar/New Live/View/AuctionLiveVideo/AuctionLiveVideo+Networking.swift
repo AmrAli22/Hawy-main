@@ -403,8 +403,8 @@ extension AuctionLiveVideo {
                                         self.bidingAmountView.isHidden = false
                                         break
                                     }else{
-                                        self.bidingActionView.isHidden = true
-                                        self.bidingAmountView.isHidden = true
+//                                        self.bidingActionView.isHidden = true
+//                                        self.bidingAmountView.isHidden = true
                                     }
                                 }
                             }

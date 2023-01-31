@@ -15,6 +15,8 @@ import AVFoundation
 class AuctionLiveVideo: BaseViewViewController {
     
     //MARK: - Outlets
+    @IBOutlet weak var auctionFinalBidingStatues: UIView!
+    @IBOutlet weak var auctionFInalBidingStatuesLabel: UILabel!
     @IBOutlet weak var acceptRjectRaiseHandViewHeight: NSLayoutConstraint!
     @IBOutlet weak var acceptRjectRaiseHandView: UIView!
     @IBOutlet weak var cardsGradientView: GradientView!
@@ -174,9 +176,11 @@ class AuctionLiveVideo: BaseViewViewController {
             self.listenToOutVideoCall(auction_id: self.auctionID, card_id: self.cardID)
             self.listenToMicCall(auction_id: self.auctionID, card_id: self.cardID)
             cardCounter += 1
-            
+            updateTimer()
         }
         
+        
+         // Top right corner, Top left corner respectively
         
     }
     
@@ -206,6 +210,7 @@ class AuctionLiveVideo: BaseViewViewController {
     var index2 = 2
     var index3 = 3
     
+    @IBOutlet weak var BidPriceStauesStaues: UIView!
     @IBOutlet weak var bidingAmountView: UIView!
     @IBOutlet weak var bidingActionView: UIView!
     
@@ -237,7 +242,9 @@ class AuctionLiveVideo: BaseViewViewController {
         
         winnigView.isHidden = true
         
-        
+        auctionFInalBidingStatuesLabel.clipsToBounds = true
+        auctionFInalBidingStatuesLabel.layer.cornerRadius = 10
+        auctionFInalBidingStatuesLabel.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
  
     override func viewDidDisappear(_ animated: Bool) {
@@ -267,6 +274,11 @@ class AuctionLiveVideo: BaseViewViewController {
             minusButtonOutlet.roundCornersWithMask([.topLeading, .bottomLeading], radius: 10)
         }
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateTimer()
     }
     
     override func viewWillLayoutSubviews() {

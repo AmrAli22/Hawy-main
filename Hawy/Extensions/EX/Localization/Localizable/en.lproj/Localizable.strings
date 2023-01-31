@@ -194,3 +194,7 @@
 
 "Waiting For Conductor" = "Waiting For Conductor";
 "The bidding switched to this card by the admin" = "The bidding switched to this card by the admin";
+
+"AuctionEnded" = "Auction Has Ended";
+"Gongr" = "congratulation , You won the auction";
+"BackHome" = "Back To Home" ;

@@ -16,7 +16,8 @@ extension AuctionLiveVideo {
     
     func getLiveAuctionData(id: Int?) {
         
-        // auth/profile/cards/show?id=
+        print("Listnng To (getLiveAuctionData) -  https://hawy-kw.com/api/auctions/sales/show?auction_id=\(id ?? 0) ")
+        
         let url = "https://hawy-kw.com/api/auctions/sales/show?auction_id=\(id ?? 0)"
         
         
@@ -42,15 +43,13 @@ extension AuctionLiveVideo {
                     
                 case .success(let JSON):
                     
-                    print("Validation Successful with response JSON \(JSON)")
-                    
                     guard let data = response.data else { return }
                     
                     do {
                         
                         let decoder = JSONDecoder()
                         let liveAuctionRequest = try decoder.decode(NewLiveAuctionModel.self, from: data)
-                        print(liveAuctionRequest)
+                        
                         
                         if liveAuctionRequest.message == "Unauthenticated." {
                             
@@ -88,6 +87,7 @@ extension AuctionLiveVideo {
                                 if card.selectorStatus == true {
                                     
                                     self.cardID = card.id
+                                    self.curretCard = card
                                     self.firstTimeCardSelect = true
                                     self.iamConductor = card.conductor?.id == HelperConstant.getUserId()
                                     self.noteTV.text = card.notes ?? ""
@@ -184,6 +184,7 @@ extension AuctionLiveVideo {
                                             self.muteMic = true
                                           //  self.VideoStatues = false
                                             self.videoStatus(status: "off")
+                                            self.VideoStatues = false
                                             self.videoMuteButton.isHidden = true
                                             self.switchCameraButton.isHidden = true
                                             
@@ -279,6 +280,7 @@ extension AuctionLiveVideo {
                                             
                                             self.bidMaxPrice = card.bidMaxPrice
                                             self.cardID = card.id
+                                            self.curretCard = card
                                         }else{
                                             self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
                                             print(card.offer?.price ?? "0.0")
@@ -289,6 +291,7 @@ extension AuctionLiveVideo {
                                             
                                             self.bidMaxPrice = card.bidMaxPrice
                                             self.cardID = card.id
+                                            self.curretCard = card
                                         }
                                         
                                    
@@ -320,6 +323,8 @@ extension AuctionLiveVideo {
     
     func getParticipants(id: Int?) {
         
+        print("Listnng To (getParticipants) -  https://hawy-kw.com/api/auctions/sales/show?auction_id=\(id ?? 0)")
+        
         let url = "https://hawy-kw.com/api/auctions/sales/show?auction_id=\(id ?? 0)"
         //&user_id=\(HelperConstant.getUserId() ?? 0)"
         
@@ -344,8 +349,6 @@ extension AuctionLiveVideo {
                 switch response.result {
                     
                 case .success(let JSON):
-                    
-                    print("Validation Successful with response JSON \(JSON)")
                     
                     guard let data = response.data else { return }
                     
@@ -379,6 +382,8 @@ extension AuctionLiveVideo {
                             for card in liveAuctionRequest.item?.cards ?? [] {
                                 
                                 if card.selectorStatus == true {
+                                    self.cardID = card.id
+                                    self.curretCard = card
                                     self.AllRequsts = card.joinedUsers ?? []
                                     self.membersCountLabel.text = "\(self.AllRequsts.count)"
                                     self.membersInLiveCollection.reloadData()
@@ -386,6 +391,23 @@ extension AuctionLiveVideo {
                                 
                             }
                             
+                            
+                            let allUsers = self.curretCard.joinedUsers ?? []
+                            let currentCunductor = self.curretCard.conductor
+                            
+                            
+                            if !self.iamConductor {
+                                for user in allUsers{
+                                    if user.id == currentCunductor?.id {
+                                        self.bidingActionView.isHidden = false
+                                        self.bidingAmountView.isHidden = false
+                                        break
+                                    }else{
+                                        self.bidingActionView.isHidden = true
+                                        self.bidingAmountView.isHidden = true
+                                    }
+                                }
+                            }
                         }
                         
                         //self.hideIndecator()
@@ -406,6 +428,9 @@ extension AuctionLiveVideo {
     }
     
     func getCardUpdate(id: Int?) {
+        
+        print("Listnng To (getCardUpdate) -  https://hawy-kw.com/api/auctions/sales/show?id=\(id ?? 0)&user_id=\(HelperConstant.getUserId() ?? 0)")
+        
         let url = "https://hawy-kw.com/api/auctions/sales/show?id=\(id ?? 0)&user_id=\(HelperConstant.getUserId() ?? 0)"
         
         let headers: HTTPHeaders = [
@@ -488,10 +513,11 @@ extension AuctionLiveVideo {
                                             
                                             self.ownerUserImage.isHidden = false
                                             self.ownerUserImage.loadImage(URLS.baseImageURL+(card.owner?.image ?? ""))
-                                            self.ownerNameLabel.text = "Init Price".localized
+                                            self.ownerNameLabel.text = "Init price".localized
                                             
                                             self.bidMaxPrice = card.bidMaxPrice
                                             self.cardID = card.id
+                                            self.curretCard = card
                                         }else{
                                             self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
                                             print(card.offer?.price ?? "0.0")
@@ -502,6 +528,7 @@ extension AuctionLiveVideo {
                                             
                                             self.bidMaxPrice = card.bidMaxPrice
                                             self.cardID = card.id
+                                            self.curretCard = card
                                         }
                                     }
                                     
@@ -531,6 +558,9 @@ extension AuctionLiveVideo {
     
     func liveCardStatus(cardIDDD : Int) { //url: String, parameters: [String:Any]
         
+        print("Listnng To (liveCardStatus) -  https://hawy-kw.com/api/auctions/live/videoCall/cards/status")
+        
+        
         showLoadingView()
         
         let url = "https://hawy-kw.com/api/auctions/live/videoCall/cards/status"
@@ -541,9 +571,7 @@ extension AuctionLiveVideo {
             "user_id": HelperConstant.getUserId() ?? 0
             
         ]
-        
-        print(param)
-        
+
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "Accept":"application/json",
@@ -569,15 +597,12 @@ extension AuctionLiveVideo {
                     
                 case .success(let JSON):
                     
-                    print("Validation Successful with response JSON \(JSON)")
-                    
                     guard let data = response.data else { return }
                     
                     do {
                         
                         let decoder = JSONDecoder()
                         let liveAuctionRequest = try decoder.decode(NewLiveAuctionModel.self, from: data)
-                        print(liveAuctionRequest)
                         
                         self.getCardUpdate(id: self.auctionID)
                         self.getParticipants(id: self.auctionID)
@@ -586,6 +611,7 @@ extension AuctionLiveVideo {
                                 if card.selectorStatus == true {
                                     
                                     self.cardID = card.id
+                                    self.curretCard = card
                                     self.firstTimeCardSelect = true
                                     
                                 }
@@ -619,17 +645,15 @@ extension AuctionLiveVideo {
                         
                     }
                     
-                case .failure(let error):
-                    
-                    print("Request failed with error \(error)")
-                    
+                case .failure(let error): break
+
                 }
-                
             }
-        
     }
     
-    func performUpdateStatusAgree(status: String?, CurrentCardID : Int) { //url: String, parameters: [String:Any]
+    func performUpdateStatusAgree(status: String?, CurrentCardID : Int) {
+        
+        print("Listnng To (performUpdateStatusAgree) -  https://hawy-kw.com/api/auctions/sales/status")
         
         let url = "https://hawy-kw.com/api/auctions/sales/status"
         
@@ -640,8 +664,7 @@ extension AuctionLiveVideo {
             "status": status ?? "" //bidLabel.text ?? ""
             
         ]
-        
-        print(param)
+
         
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
@@ -666,8 +689,6 @@ extension AuctionLiveVideo {
                     
                 case .success(let JSON):
                     
-                    print("Validation Successful with response JSON \(JSON)")
-                    
                     guard let data = response.data else { return }
                     
                     do {
@@ -677,13 +698,6 @@ extension AuctionLiveVideo {
                         print(forgetPasswordRequest)
                         
                         if forgetPasswordRequest.code == 200 {
-                            
-                            print("success")
-                            
-                            //self.acceptOfferLabel.text = "Offer accepted".localized
-                            //self.payDoneStack.isHidden = false
-                            //self.acceptRejectButtonsStack.isHidden = true
-                            //self.desc24HLabel.isHidden = false
                             
                             self.getCardUpdate(id: self.auctionID)
                             
@@ -728,6 +742,11 @@ extension AuctionLiveVideo {
     
     func performUpdateStatusDisagree(status: String?, CurrentCardID : Int) { //url: String, parameters: [String:Any]
         
+        
+        print("Listnng To (performUpdateStatusDisagree) -  https://hawy-kw.com/api/auctions/sales/status")
+        
+        
+        
         let url = "https://hawy-kw.com/api/auctions/sales/status"
         
         let param: [String: Any] = [
@@ -737,9 +756,7 @@ extension AuctionLiveVideo {
             "status": status ?? "" //bidLabel.text ?? ""
             
         ]
-        
-        print(param)
-        
+
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "Accept":"application/json",
@@ -771,17 +788,9 @@ extension AuctionLiveVideo {
                         
                         let decoder = JSONDecoder()
                         let forgetPasswordRequest = try decoder.decode(AuctionAcceptRejectModelModel.self, from: data)
-                        print(forgetPasswordRequest)
                         
                         if forgetPasswordRequest.code == 200 {
-                            
-                            print("success")
-                            
-                            //self.acceptOfferLabel.text = "Offer rejected".localized
-                            //self.desc24HLabel.isHidden = true
-                            //self.payDoneStack.isHidden = true
-                            //self.acceptRejectButtonsStack.isHidden = true
-                            //self.acceptedRejectedViewHeight.constant = 40
+
                             
                             self.getCardUpdate(id: self.auctionID)
                             
@@ -827,6 +836,8 @@ extension AuctionLiveVideo {
     
     func performUpdateStatusPayDone(status: String? ,CurrentCardID : Int){ //url: String, parameters: [String:Any]
         
+        print("Listnng To (performUpdateStatusPayDone) -  https://hawy-kw.com/api/auctions/sales/status")
+        
         let url = "https://hawy-kw.com/api/auctions/sales/status"
         
         let param: [String: Any] = [
@@ -836,9 +847,7 @@ extension AuctionLiveVideo {
             "status": status ?? "" //bidLabel.text ?? ""
             
         ]
-        
-        print(param)
-        
+
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "Accept":"application/json",
@@ -861,26 +870,17 @@ extension AuctionLiveVideo {
                 switch response.result {
                     
                 case .success(let JSON):
-                    
-                    print("Validation Successful with response JSON \(JSON)")
-                    
+                                    
                     guard let data = response.data else { return }
                     
                     do {
                         
                         let decoder = JSONDecoder()
                         let forgetPasswordRequest = try decoder.decode(AuctionAcceptRejectModelModel.self, from: data)
-                        print(forgetPasswordRequest)
+
                         
                         if forgetPasswordRequest.code == 200 {
-                            
-                            print("success")
-                            
-                            //self.acceptOfferLabel.text = "Pay Done".localized
-                            //self.desc24HLabel.isHidden = true
-                            //self.payDoneStack.isHidden = true
-                            //self.acceptRejectButtonsStack.isHidden = true
-                            
+        
                             self.getCardUpdate(id: self.auctionID)
                             
                             self.getParticipants(id: self.auctionID)
@@ -925,6 +925,8 @@ extension AuctionLiveVideo {
     
     func performAddBidRequest() { //url: String, parameters: [String:Any]
         
+        print("Listnng To (performAddBidRequest) -  https://hawy-kw.com/api/bid)")
+        
         let url = "https://hawy-kw.com/api/bid"
         
         let param: [String: Any] = [
@@ -935,9 +937,7 @@ extension AuctionLiveVideo {
             "bid_time": Int(Date.currentTimeStamp)
             
         ]
-        
-        print(param)
-        
+ 
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "Accept":"application/json",
@@ -972,17 +972,7 @@ extension AuctionLiveVideo {
                         print(forgetPasswordRequest)
                         
                         if forgetPasswordRequest.code == 200 {
-                            
-                            print("success")
-                            
-                            //self.bidLabel.text = "\(forgetPasswordRequest.item?.minimumBiding ?? 0)"
-                            //
-                            //self.priceLabel.text = "\(forgetPasswordRequest.item?.offer?.price ?? "0.0")"
-                            //self.priceLabel.text = "\(forgetPasswordRequest.item?.offer?.price ?? "0.0")"
-                            ////self.bidLabel.text = data.data?.price
-                            //self.ownerUserImage.loadImage(URLS.baseImageURL+(forgetPasswordRequest.item?//.offer?.user?.image ?? ""))
-                            //self.ownerNameLabel.text = forgetPasswordRequest.item?.offer?.user?.name ?? ""
-                            
+           
                         }
                         
                         if forgetPasswordRequest.message == "Unauthenticated." {
@@ -1022,6 +1012,8 @@ extension AuctionLiveVideo {
     }
     
     func videoCallToken(auctionID: Int?, card_id: Int?) {
+        
+        print("Listnng To (videoCallToken) -  https://hawy-kw.com/api/auctions/live/videoCall/token?auction_id=\(auctionID ?? 0)&card_id=\(cardID ?? 0)")
         
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
@@ -1107,6 +1099,9 @@ extension AuctionLiveVideo {
     
     func JoinUserAuctionVideo() {
         
+        print("Listnng To (JoinUserAuctionVideo) -  https://hawy-kw.com/api/auctions/live/videoCall/user/join")
+        
+        
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "Accept":"application/json",
@@ -1167,6 +1162,9 @@ extension AuctionLiveVideo {
     }
     
     func deleteUserAuctionVideo() {
+        
+        print("Listnng To (deleteUserAuctionVideo) -  https://hawy-kw.com/api/auctions/live/videoCall/user/out")
+        
         
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
@@ -1232,6 +1230,9 @@ extension AuctionLiveVideo {
     
     func raiseHand() {
         
+        print("Listnng To (raiseHand) -  https://hawy-kw.com/api/auctions/live/videoCall/user/raiseHand")
+        
+        
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "Accept":"application/json",
@@ -1251,8 +1252,7 @@ extension AuctionLiveVideo {
         AF.request("https://hawy-kw.com/api/auctions/live/videoCall/user/raiseHand", method: .post, parameters: param, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200...500)
             .responseJSON { (response) in
-                print(response)
-                
+ 
                 do {
                     let productResponse = try JSONDecoder().decode(AddUserToAuctionVideoModel.self, from: response.data!)
                     
@@ -1277,10 +1277,7 @@ extension AuctionLiveVideo {
                     }
                     
                     if productResponse.code == 200 {
-                        print("success")
-                        
                         self.acceptRejectId = productResponse.item?.id //data.data?.id
-                        print(self.acceptRejectId)
                         
                     }else{
                         ToastManager.shared.showError(message: productResponse.message ?? "", view: self.view)
@@ -1296,6 +1293,8 @@ extension AuctionLiveVideo {
     
     //
     func raiseHandRequests(auctionID: Int?, card_id: Int?) {
+        
+        print("Listnng To (raiseHandRequests) -  https://hawy-kw.com/api/auctions/live/videoCall/user/raiseHandRequests?auction_id=\(auctionID ?? 0)&card_id=\(cardID ?? 0)")
         
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
@@ -1352,6 +1351,9 @@ extension AuctionLiveVideo {
     //
     func raiseHandStatus(status: String?) {
         
+        print("Listnng To (raiseHandStatus) -  https://hawy-kw.com/api/auctions/live/videoCall/user/raiseHand/status")
+        
+        
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "Accept":"application/json",
@@ -1372,7 +1374,6 @@ extension AuctionLiveVideo {
         AF.request("https://hawy-kw.com/api/auctions/live/videoCall/user/raiseHand/status", method: .post, parameters: param, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200...500)
             .responseJSON { (response) in
-                print(response)
                 
                 do {
                     let productResponse = try JSONDecoder().decode(AddUserToAuctionVideoModel.self, from: response.data!)
@@ -1397,12 +1398,7 @@ extension AuctionLiveVideo {
                     }
                     
                     if productResponse.code == 200 {
-                        print("success")
-                        
-                        //self.getJoindData(id: self.card_id, userId: HelperConstant.getUserId())
                         self.getParticipants(id: self.auctionID)
-                        //self.raiseHandRequests(auctionID: self.auctionID, card_id: self.card_id)
-                        
                         self.acceptRjectRaiseHandViewHeight.constant = 0
                         self.acceptRjectRaiseHandView.isHidden = true
                         
@@ -1423,6 +1419,8 @@ extension AuctionLiveVideo {
     //
     func microphoneStatus(mic: String) {
         
+        print("Listnng To (microphoneStatus) -  https://hawy-kw.com/api/auctions/live/videoCall/user/microphone")
+        
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
             "Accept":"application/json",
@@ -1442,7 +1440,6 @@ extension AuctionLiveVideo {
         AF.request("https://hawy-kw.com/api/auctions/live/videoCall/user/microphone", method: .post, parameters: param, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200...500)
             .responseJSON { (response) in
-                print(response)
                 
                 do {
                     let productResponse = try JSONDecoder().decode(AddUserToAuctionVideoModel.self, from: response.data!)
@@ -1467,11 +1464,7 @@ extension AuctionLiveVideo {
                     }
                     
                     if productResponse.code == 200 {
-                        print("success")
-                        
-                        
-                        
-                        //self.getJoindData(id: self.card_id, userId: HelperConstant.getUserId())
+ 
                         self.getParticipants(id: self.auctionID)
                         
                     }else{
@@ -1489,6 +1482,8 @@ extension AuctionLiveVideo {
     
     
     func videoStatus(status: String) {
+        
+        print("Listnng To (videoStatus) -  https://hawy-kw.com/api/auctions/live/videoCall/user/videoStatus")
         
         let headers: HTTPHeaders = [
             "Content-Type":"application/json",
@@ -1509,7 +1504,6 @@ extension AuctionLiveVideo {
         AF.request("https://hawy-kw.com/api/auctions/live/videoCall/user/videoStatus", method: .post, parameters: param, encoding: JSONEncoding.default, headers: headers)
             .validate(statusCode: 200...500)
             .responseJSON { (response) in
-                print(response)
                 
                 do {
                     let productResponse = try JSONDecoder().decode(AddUserToAuctionVideoModel.self, from: response.data!)

@@ -16,7 +16,7 @@ extension AuctionLiveVideo : PusherDelegate {
     
      func listenToChangesFromPusherTime(auction_id: Int?, card_id: Int?) {
         
-        print("auction_id: \(auction_id), card_id: \(card_id)")
+         print("Listnng To (App\\Events\\UpdateTime) - listenToChangesFromPusherTime ")
         // Instantiate Pusher
         pusherTime = Pusher(
             key: "65b581feebecaee4af62",
@@ -25,7 +25,7 @@ extension AuctionLiveVideo : PusherDelegate {
         
         // Subscribe to a pusher channel
         let channel = pusherTime.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)")
-         print("channelchanne\("auction.\(auction_id ?? 0).\(cardID ?? 0)")")
+         
         
         pusherTime.delegate = self
         
@@ -35,44 +35,35 @@ extension AuctionLiveVideo : PusherDelegate {
         // the callback when the event is triggerred
         
         let eventNamee = #"App\Events\ApiDataListener"#
-        print("App\\Events\\ApiDataListener")
-        
-        print(eventNamee)
-        
+
         let _ = channel.bind(eventName: "App\\Events\\UpdateTime" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
             
             guard let self = self else { return }
-            
-            print(event)
-            
+   
             // convert the data string to type data for decoding
             guard let json = event.data,
                   let jsonData = json.data(using: .utf8)
             else {
-                print("Could not convert JSON string to data")
                 return
             }
-            
-            print(json)
-            print(jsonData)
-            
+
             // decode the event data as json into a RealTimeModel
             let decoded = try? self.decoder.decode(UpdateTime.self, from: jsonData)
             guard let data = decoded else {
-                print("Could not decode message")
                 return
             }
             
             self.finalTotal = data.end_date ?? 0
-            //self.startOtpTimer()
-            
+
         })
         
     }
     
      func listenToJoinVideoCall(auction_id: Int?, card_id: Int?) {
         
-        print("auction_id: \(auction_id), card_id: \(card_id)")
+         
+         print("Listnng To (join_auction_video_call) - listenToJoinVideoCall ")
+         
         // Instantiate Pusher
         pusher = Pusher(
             key: "65b581feebecaee4af62",
@@ -80,34 +71,28 @@ extension AuctionLiveVideo : PusherDelegate {
         )
         
         // Subscribe to a pusher channel
-        let channel = pusher.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)") //.\(card_id ?? 0)
-         print("channelchanne\("auction.\(auction_id ?? 0).\(cardID ?? 0)")")
+        let channel = pusher.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)")
         pusher.delegate = self
         pusher.connect()
 
         let _ = channel.bind(eventName: "join_auction_video_call" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
             
             guard let self = self else { return }
-            
-            print(event)
-            
             // convert the data string to type data for decoding
             guard let json = event.data,
                   let jsonData = json.data(using: .utf8)
             else {
-                print("Could not convert JSON string to data")
+                
                 return
             }
-            
-            print(json)
-            print(jsonData)
-            
+
             // decode the event data as json into a RealTimeModel
             let decoded = try? self.decoder.decode(RealTimeLiveModel.self, from: jsonData)
             guard let data = decoded else {
-                print("Could not decode message")
                 return
             }
+            
+            
             
             //self.getJoindData(id: self.card_id, userId: HelperConstant.getUserId())
             self.getParticipants(id: auction_id)
@@ -117,17 +102,16 @@ extension AuctionLiveVideo : PusherDelegate {
     }
     
      func listenToOutVideoCall(auction_id: Int?, card_id: Int?) {
-        
-        print("auction_id: \(auction_id), card_id: \(card_id)")
-        // Instantiate Pusher
+    
+         print("Listnng To (out_auction_video_call) - listenToOutVideoCall ")
+         
         pusher = Pusher(
             key: "65b581feebecaee4af62",
             options: PusherClientOptions(host: .cluster("eu"))
         )
         
         // Subscribe to a pusher channel
-        let channel = pusher.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)") //.\(card_id ?? 0)
-         print("channelchanne\("auction.\(auction_id ?? 0).\(cardID ?? 0)")")
+        let channel = pusher.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)")
         pusher.delegate = self
         
         pusher.connect()
@@ -135,24 +119,18 @@ extension AuctionLiveVideo : PusherDelegate {
         let _ = channel.bind(eventName: "out_auction_video_call" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
             
             guard let self = self else { return }
-            
-            print(event)
-            
+
             // convert the data string to type data for decoding
             guard let json = event.data,
                   let jsonData = json.data(using: .utf8)
             else {
-                print("Could not convert JSON string to data")
                 return
             }
-            
-            print(json)
-            print(jsonData)
-            
+
             // decode the event data as json into a RealTimeModel
             let decoded = try? self.decoder.decode(RealTimeLiveModel.self, from: jsonData)
             guard let data = decoded else {
-                print("Could not decode message")
+
                 return
             }
             //self.getJoindData(id: self.card_id, userId: HelperConstant.getUserId())
@@ -168,17 +146,16 @@ extension AuctionLiveVideo : PusherDelegate {
                     self.remoteView.isHidden = false
                 }
                 self.getParticipants(id: auction_id)
+                self.bidingActionView.isHidden = true
+                self.bidingAmountView.isHidden = true
             }
-            
-       
-            
         })
-        
     }
     
      func listenToMicCall(auction_id: Int?, card_id: Int?) {
-        
-        print("auction_id: \(auction_id), card_id: \(card_id)")
+
+         print("Listnng To (microphone) - listenToMicCall ")
+         
         // Instantiate Pusher
         pusher4 = Pusher(
             key: "65b581feebecaee4af62",
@@ -191,32 +168,23 @@ extension AuctionLiveVideo : PusherDelegate {
         pusher4.delegate = self
         
         pusher4.connect()
-        
-        // Bind to an event called "order-event" on the event channel and fire
-        // the callback when the event is triggerred
-        
-        
+
         let _ = channel.bind(eventName: "microphone" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
             
             guard let self = self else { return }
-            
-            print(event)
-            
+
             // convert the data string to type data for decoding
             guard let json = event.data,
                   let jsonData = json.data(using: .utf8)
             else {
-                print("Could not convert JSON string to data")
                 return
             }
-            
-            print(json)
-            print(jsonData)
+
             
             // decode the event data as json into a RealTimeModel
             let decoded = try? self.decoder.decode(RealTimeLiveModel.self, from: jsonData)
             guard let data = decoded else {
-                print("Could not decode message")
+
                 return
             }
             self.getParticipants(id: auction_id)
@@ -226,7 +194,9 @@ extension AuctionLiveVideo : PusherDelegate {
     
      func listenToAdminRaiseHandCall(auction_id: Int?, card_id: Int?) {
         
-        print("auction_id: \(auction_id ?? 0), card_id: \(card_id)")
+         
+         print("Listnng To (admin_raise_hand_response) - listenToAdminRaiseHandCall ")
+        
         // Instantiate Pusher
         pusher6 = Pusher(
             key: "65b581feebecaee4af62",
@@ -235,7 +205,7 @@ extension AuctionLiveVideo : PusherDelegate {
         
         // Subscribe to a pusher channel
         let channel = pusher6.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)") //.\(card_id ?? 0)
-         print("channelchanne\("auction.\(auction_id ?? 0).\(cardID ?? 0)")")
+         
         pusher6.delegate = self
         
         pusher6.connect()
@@ -247,24 +217,20 @@ extension AuctionLiveVideo : PusherDelegate {
         let _ = channel.bind(eventName: "admin_raise_hand_response" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
             
             guard let self = self else { return }
-            
-            print(event)
+
             
             // convert the data string to type data for decoding
             guard let json = event.data,
                   let jsonData = json.data(using: .utf8)
             else {
-                print("Could not convert JSON string to data")
+                
                 return
             }
-            
-            print(json)
-            print(jsonData)
-            
+
             // decode the event data as json into a RealTimeModel
             let decoded = try? self.decoder.decode(RealTimeLiveModel.self, from: jsonData)
             guard let data = decoded else {
-                print("Could not decode message")
+                
                 return
             }
             
@@ -287,7 +253,8 @@ extension AuctionLiveVideo : PusherDelegate {
     
      func listenToAdminVideoStatusCall(auction_id: Int?, card_id: Int?) {
         
-        print("auction_id: \(auction_id), card_id: \(card_id)")
+         print("Listnng To (videoStatus) - listenToAdminVideoStatusCall ")
+         
         // Instantiate Pusher
         pusher7 = Pusher(
             key: "65b581feebecaee4af62",
@@ -296,31 +263,27 @@ extension AuctionLiveVideo : PusherDelegate {
         
         // Subscribe to a pusher channel
         let channel = pusher7.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)") //.\(card_id ?? 0)
-         print("channelchanne\("auction.\(auction_id ?? 0).\(cardID ?? 0)")")
+         
         pusher7.delegate = self
         pusher7.connect()
 
          let _ = channel.bind(eventName: "videoStatus" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
              
              guard let self = self else { return }
-             
-             print(event)
+
              
              // convert the data string to type data for decoding
              guard let json = event.data,
                    let jsonData = json.data(using: .utf8)
              else {
-                 print("Could not convert JSON string to data")
+                 
                  return
              }
-             
-             print(json)
-             print(jsonData)
-             
+     
              // decode the event data as json into a RealTimeModel
              let decoded = try? self.decoder.decode(RealTimeLiveModel.self, from: jsonData)
              guard let data = decoded else {
-                 print("Could not decode message")
+                 
                  return
              }
              
@@ -344,8 +307,9 @@ extension AuctionLiveVideo : PusherDelegate {
     }
     
     func listenToRaiseHandCall(auction_id: Int?, card_id: Int?) {
+
+        print("Listnng To (raise_Hand) - listenToRaiseHandCall ")
         
-        print("auction_id: \(auction_id), card_id: \(card_id)")
         // Instantiate Pusher
         pusher3 = Pusher(
             key: "65b581feebecaee4af62",
@@ -353,8 +317,7 @@ extension AuctionLiveVideo : PusherDelegate {
         )
         
         // Subscribe to a pusher channel
-        let channel = pusher3.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)") //.\(card_id ?? 0)
-        print("channelchanne\("auction.\(auction_id ?? 0).\(cardID ?? 0)")")
+        let channel = pusher3.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)")
         pusher3.delegate = self
         
         pusher3.connect()
@@ -373,17 +336,15 @@ extension AuctionLiveVideo : PusherDelegate {
             guard let json = event.data,
                   let jsonData = json.data(using: .utf8)
             else {
-                print("Could not convert JSON string to data")
+       
                 return
             }
-            
-            print(json)
-            print(jsonData)
+        
             
             // decode the event data as json into a RealTimeModel
             let decoded = try? self.decoder.decode(RealTimeLiveModel.self, from: jsonData)
             guard let data = decoded else {
-                print("Could not decode message")
+     
                 return
             }
        
@@ -401,8 +362,9 @@ extension AuctionLiveVideo : PusherDelegate {
     }
     
      func listenToChangesFromPusherUSD(auction_id: Int?, card_id: Int?) {
-        
-        print("auction_id: \(auction_id), card_id: \(card_id)")
+
+         print("Listnng To (usd_bid) - listenToChangesFromPusherUSD ")
+         
         // Instantiate Pusher
         bidPusher = Pusher(
             key: "65b581feebecaee4af62",
@@ -411,7 +373,7 @@ extension AuctionLiveVideo : PusherDelegate {
         
         // Subscribe to a pusher channel
         let channel = bidPusher.subscribe("auction.\(auction_id ?? 0).\(cardID ?? 0)")
-         print("channelchanne\("auction.\(auction_id ?? 0).\(cardID ?? 0)")")
+         
         bidPusher.delegate = self
         
         bidPusher.connect()
@@ -420,15 +382,12 @@ extension AuctionLiveVideo : PusherDelegate {
         // the callback when the event is triggerred
         
         let eventNamee = #"App\Events\ApiDataListener"#
-        print("App\\Events\\ApiDataListener")
-        
-        print(eventNamee)
+     
         
         let _ = channel.bind(eventName: "usd_bid" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
             
             guard let self = self else { return }
-            
-            print(event)
+  
             
             // convert the data string to type data for decoding
             guard let json = event.data,
@@ -454,20 +413,21 @@ extension AuctionLiveVideo : PusherDelegate {
 //            }
             
             self.cardID = decoded?.data?.offer?.cardID
+            
             self.getCardUpdate(id: self.auctionID)
            // self.getLiveAuctionData(id: self.auctionID)
             self.view.layoutIfNeeded()
             self.cardsTableViewHeight.constant = self.cardsTableView.contentSize.height
             self.view.layoutIfNeeded()
-            
-            print("\(data.data) says \(data.data)")
+
             
         })
         
     }
      func listenToChangesFromKWDPusher(auction_id: Int?, card_id: Int?) {
-        
-        print("auction_id: \(auction_id), card_id: \(card_id)")
+      
+         print("Listnng To (kwd_bid) - listenToChangesFromKWDPusher ")
+         
         // Instantiate Pusher
         bidPusher = Pusher(
             key: "65b581feebecaee4af62",
@@ -485,15 +445,12 @@ extension AuctionLiveVideo : PusherDelegate {
         // the callback when the event is triggerred
         
         let eventNamee = #"App\Events\ApiDataListener"#
-        print("App\\Events\\ApiDataListener")
         
-        print(eventNamee)
         
         let _ = channel.bind(eventName: "kwd_bid" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
             
             guard let self = self else { return }
-            
-            print(event)
+
             
             // convert the data string to type data for decoding
             guard let json = event.data,
@@ -502,10 +459,7 @@ extension AuctionLiveVideo : PusherDelegate {
                 print("Could not convert JSON string to data")
                 return
             }
-            
-            print(json)
-            print(jsonData)
-            
+
             // decode the event data as json into a RealTimeModel
             let decoded = try? self.decoder.decode(RealTimeModel.self, from: jsonData)
             guard let data = decoded else {
@@ -518,8 +472,7 @@ extension AuctionLiveVideo : PusherDelegate {
             self.view.layoutIfNeeded()
             self.cardsTableViewHeight.constant = self.cardsTableView.contentSize.height
             self.view.layoutIfNeeded()
-            
-            print("\(data.data) says \(data.data)")
+
             
         })
         
@@ -528,7 +481,9 @@ extension AuctionLiveVideo : PusherDelegate {
     
     func listenToCardStatusFromUSDPusher(auction_id: Int?) {
        
-       print("auction_id: \(auction_id)")
+        print("Listnng To (usd_live_cards_status) - listenToCardStatusFromUSDPusher ")
+        
+       
        // Instantiate Pusher
        pusherCards = Pusher(
            key: "65b581feebecaee4af62",
@@ -548,9 +503,7 @@ extension AuctionLiveVideo : PusherDelegate {
        let _ = channel.bind(eventName: "usd_live_cards_status" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
            
            guard let self = self else { return }
-           
-           print(event)
-           
+
            // convert the data string to type data for decoding
            guard let json = event.data,
                  let jsonData = json.data(using: .utf8)
@@ -558,21 +511,24 @@ extension AuctionLiveVideo : PusherDelegate {
                print("Could not convert JSON string to data")
                return
            }
-           
-           print(json)
-           print(jsonData)
+
            
            // decode the event data as json into a RealTimeModel
            let decoded = try? self.decoder.decode(AddSaleAuctionDataModel.self, from: jsonData)
            guard let data = decoded else {
-               print("Could not decode message")
+ 
                return
            }
            
            for card in data.data?.cards ?? [] {
                
                if card.selectorStatus == true {
+                   if card.id != self.cardID {
+                           ToastManager.shared.showError(message:  "The bidding switched to this card by the admin".localized , view: self.view)
+                   }
+                   
                    self.cardID = card.id
+                   self.curretCard = card
                    self.firstTimeCardSelect = true
                    print(self.cardID, self.cardID)
                    
@@ -610,24 +566,24 @@ extension AuctionLiveVideo : PusherDelegate {
                        
                        if card.offer == nil {
                            self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
-                           print(card.offer?.price ?? "0.0")
-                           
+ 
                            self.ownerUserImage.isHidden = false
                            self.ownerUserImage.loadImage(URLS.baseImageURL+(card.owner?.image ?? ""))
-                           self.ownerNameLabel.text = "Init Price".localized
+                           self.ownerNameLabel.text = "Init price".localized
                            
                            self.bidMaxPrice = card.bidMaxPrice
                            self.cardID = card.id
+                           self.curretCard = card
                        }else{
                            self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
-                           print(card.offer?.price ?? "0.0")
-                           
+
                            self.ownerUserImage.isHidden = false
                            self.ownerUserImage.loadImage(URLS.baseImageURL+(card.offer?.user?.image ?? ""))
                            self.ownerNameLabel.text = card.offer?.user?.name ?? ""
                            
                            self.bidMaxPrice = card.bidMaxPrice
                            self.cardID = card.id
+                           self.curretCard = card
                        }
                        
                    }
@@ -668,8 +624,10 @@ extension AuctionLiveVideo : PusherDelegate {
     
     
      func listenToCardStatusFromKWDPusher(auction_id: Int?) {
-        
-        print("auction_id: \(auction_id)")
+
+         
+         print("Listnng To (kwd_live_cards_status) - listenToCardStatusFromKWDPusher ")
+         
         // Instantiate Pusher
         pusherCards = Pusher(
             key: "65b581feebecaee4af62",
@@ -678,7 +636,7 @@ extension AuctionLiveVideo : PusherDelegate {
         
         // Subscribe to a pusher channel
         let channel = pusherCards.subscribe("auction.\(auction_id ?? 0)")
-         print("channelchanne\("auction.\(auction_id ?? 0).\(cardID ?? 0)")")
+         
         pusherCards.delegate = self
         
         pusherCards.connect()
@@ -689,9 +647,7 @@ extension AuctionLiveVideo : PusherDelegate {
         let _ = channel.bind(eventName: "kwd_live_cards_status" , eventCallback: { [weak self] (event: PusherEvent) -> Void in
             
             guard let self = self else { return }
-            
-            print(event)
-            
+
             // convert the data string to type data for decoding
             guard let json = event.data,
                   let jsonData = json.data(using: .utf8)
@@ -699,10 +655,7 @@ extension AuctionLiveVideo : PusherDelegate {
                 print("Could not convert JSON string to data")
                 return
             }
-            
-            print(json)
-            print(jsonData)
-            
+
             // decode the event data as json into a RealTimeModel
             let decoded = try? self.decoder.decode(AddSaleAuctionDataModel.self, from: jsonData)
             guard let data = decoded else {
@@ -713,7 +666,13 @@ extension AuctionLiveVideo : PusherDelegate {
             for card in data.data?.cards ?? [] {
                 
                 if card.selectorStatus == true {
+                    
+                    if card.id != self.cardID {
+                            ToastManager.shared.showError(message:  "The bidding switched to this card by the admin".localized , view: self.view)
+                    }
+                    
                     self.cardID = card.id
+                    self.curretCard = card
                     self.firstTimeCardSelect = true
         
                     self.noteTV.text = card.notes ?? ""
@@ -737,10 +696,11 @@ extension AuctionLiveVideo : PusherDelegate {
                         
                         self.ownerUserImage.isHidden = false
                         self.ownerUserImage.loadImage(URLS.baseImageURL+(card.owner?.image ?? ""))
-                        self.ownerNameLabel.text = "Init Price".localized
+                        self.ownerNameLabel.text = "Init price".localized
                         
                         self.bidMaxPrice = card.bidMaxPrice
                         self.cardID = card.id
+                        self.curretCard = card
                     }else{
                         self.priceLabel.text = "\(card.bidMaxPrice ?? "")"
                         print(card.offer?.price ?? "0.0")
@@ -751,6 +711,7 @@ extension AuctionLiveVideo : PusherDelegate {
                         
                         self.bidMaxPrice = card.bidMaxPrice
                         self.cardID = card.id
+                        self.curretCard = card
                     }
                     
                 }
@@ -783,10 +744,8 @@ extension AuctionLiveVideo : PusherDelegate {
             self.listenToChangesFromPusherTime(auction_id: self.auctionID, card_id: self.cardID)
             
             if HelperConstant.getCurrency() == "USD" {
-                print(self.cardID)
                 self.listenToChangesFromPusherUSD(auction_id: self.auctionID, card_id: self.cardID)
             }else {
-                print(self.cardID)
                 self.listenToChangesFromKWDPusher(auction_id: self.auctionID, card_id: self.cardID)
             }
             

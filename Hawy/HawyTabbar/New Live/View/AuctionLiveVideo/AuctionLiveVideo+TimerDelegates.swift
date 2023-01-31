@@ -41,6 +41,15 @@ extension AuctionLiveVideo {
             //self.localVideoMutedBg.isHidden = false
             self.remoteVideoMutedIndicator.isHidden = false
             
+            if curretCard.offer?.userID == HelperConstant.getUserId() {
+                if !iamConductor {
+                    winnigView.isHidden = false
+                }else{
+                    self.bidingActionView.isHidden = true
+                    self.bidingAmountView.isHidden = true
+                }
+            }
+            
         }else if self.totalTime <= 3600 {
             
             self.timerLabel.labelFlash()

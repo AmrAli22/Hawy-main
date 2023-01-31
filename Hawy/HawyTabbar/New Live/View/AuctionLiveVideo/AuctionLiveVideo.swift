@@ -82,6 +82,8 @@ class AuctionLiveVideo: BaseViewViewController {
     
     @IBOutlet weak var BidingStatues: UILabel!
     @IBOutlet weak var emojUiImage: UIImageView!
+    @IBOutlet weak var winnigView: UIView!
+    @IBOutlet weak var contactWithOfferWinner: UILabel!
     
     
    //MARK: - ENDOutlets
@@ -152,6 +154,7 @@ class AuctionLiveVideo: BaseViewViewController {
     // Tutorial Step 1
     var auctionID: Int?
     var cardCounter = 0
+    var curretCard = Card()
     var cardID : Int? {
         didSet{
             
@@ -159,7 +162,7 @@ class AuctionLiveVideo: BaseViewViewController {
                 self.listenToRaiseHandCall(auction_id: self.auctionID, card_id: self.cardID)
             }else{
                 if cardCounter != 0{
-                    ToastManager.shared.showError(message:  "The bidding switched to this card by the admin".localized , view: self.view)
+   
                 }
             }
             self.listenToChangesFromPusherTime(auction_id: self.auctionID, card_id: self.cardID)
@@ -173,6 +176,8 @@ class AuctionLiveVideo: BaseViewViewController {
             cardCounter += 1
             
         }
+        
+        
     }
     
     var time: Int?
@@ -223,6 +228,16 @@ class AuctionLiveVideo: BaseViewViewController {
 
         getLiveAuctionData(id: self.auctionID)
         initializeAgoraEngine()
+        
+        if HelperConstant.getCurrency() == "K.D" {
+            plusMinusDescLabel.text =  "The minimum increase is 10 dinars".localized
+        }else{
+            plusMinusDescLabel.text = "The minimum increase is 10 USD".localized
+        }
+        
+        winnigView.isHidden = true
+        
+        
     }
  
     override func viewDidDisappear(_ animated: Bool) {
@@ -315,10 +330,20 @@ extension AuctionLiveVideo {
         raiseHand()
     }
     
+    /*
+     
+     "The minimum increase is 50 dinars" = "الحد الادني للزياده ٥٠ دينار";
+     "The minimum increase is 10 dinars" = "الحد الادني للزياده ١٠ دينار";
+     "The minimum increase is 50 USD" = "الحد الأدنى للزيادة هو 50 USD";
+     "The minimum increase is 10 USD" = "الحد الأدنى للزيادة هو 10 USD";
+     
+     */
+    
+    
     @IBAction func plusButtonAction(_ sender: Any) {
         if Double(self.bidMaxPrice ?? "0.0") ?? 0.0 >= 1000.0 {
             if HelperConstant.getCurrency() == "K.D" {
-                plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+                plusMinusDescLabel.text =  "The minimum increase is 50 dinars".localized
             }else{
                 plusMinusDescLabel.text = "The minimum increase is 50 USD".localized
             }
@@ -327,9 +352,9 @@ extension AuctionLiveVideo {
             bidLabel.text = "\(plus)"
         }else {
             if HelperConstant.getCurrency() == "K.D" {
-                plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+                plusMinusDescLabel.text =  "The minimum increase is 10 dinars".localized
             }else{
-                plusMinusDescLabel.text = "The minimum increase is 50 USD".localized
+                plusMinusDescLabel.text = "The minimum increase is 10 USD".localized
             }
             let plus = (Int(bidLabel.text ?? "") ?? 0) + 10
             bidLabel.text = "\(plus)"
@@ -341,7 +366,7 @@ extension AuctionLiveVideo {
         }else {
             if Double(self.bidMaxPrice ?? "0.0") ?? 0.0 >= 1000.0 {
                 if HelperConstant.getCurrency() == "K.D" {
-                    plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+                    plusMinusDescLabel.text =  "The minimum increase is 50 dinars".localized
                 }else{
                     plusMinusDescLabel.text = "The minimum increase is 50 USD".localized
                 }
@@ -349,9 +374,9 @@ extension AuctionLiveVideo {
                 bidLabel.text = "\(plus)"
             }else {
                 if HelperConstant.getCurrency() == "K.D" {
-                    plusMinusDescLabel.text = "The minimum increase is 50 dinars".localized
+                    plusMinusDescLabel.text =  "The minimum increase is 10 dinars".localized
                 }else{
-                    plusMinusDescLabel.text = "The minimum increase is 50 USD".localized
+                    plusMinusDescLabel.text = "The minimum increase is 10 USD".localized
                 }
                 let plus = (Int(bidLabel.text ?? "") ?? 0) - 10
                 bidLabel.text = "\(plus)"
@@ -363,6 +388,19 @@ extension AuctionLiveVideo {
         //performUpdateStatusAgree(status: "agree", CurrentCardID: <#Int#>)
     }
     
+    @IBAction func whatsApponAction(_ sender: Any) {
+        let adminNumber = curretCard.conductor?.mobile ?? ""
+        let appURL = URL(string: "https://wa.me/\(adminNumber)")!
+        if UIApplication.shared.canOpenURL(appURL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(appURL)
+            }
+        }
+
+       
+    }
     @IBAction func rejectButtonOutlet(_ sender: Any) {
         //performUpdateStatusDisagree(status: "disagree", CurrentCardID: <#Int#>)
     }

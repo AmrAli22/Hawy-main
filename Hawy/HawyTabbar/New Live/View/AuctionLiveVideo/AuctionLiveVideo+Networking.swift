@@ -111,10 +111,10 @@ extension AuctionLiveVideo {
                                         self.descriptionOfWinAndLoseView.isHidden = false
                                         
                                         self.plusMinusViewHeight.constant = 160
-                                        self.plusMinusView.isHidden = false
+                                        self.bidingActionView.isHidden = false
                                         
                                         self.addBidViewHeight.constant = 70
-                                        self.addBidView.isHidden = false
+                                        self.BidingAmountView.isHidden = false
                                         
                                         self.sendRaiseHandViewHeight.constant = 90
                                         self.sendRaiseHandView.isHidden = false
@@ -134,11 +134,16 @@ extension AuctionLiveVideo {
                                         }
                                         
                                         if card.owner?.id == HelperConstant.getUserId()  {
-                                            self.bidingAmountView.isHidden = true
+                                            self.BidingAmountView.isHidden = true
                                             self.bidingActionView.isHidden = true
                                         }else{
-                                            self.bidingAmountView.isHidden = false
-                                            self.bidingActionView.isHidden = false
+                                            
+                                            if self.totalTime > 0 {
+                                                self.BidingAmountView.isHidden = false
+                                                self.bidingActionView.isHidden = false
+                                            }
+                                            
+                                           
                                         }
                                         
                                         
@@ -161,10 +166,10 @@ extension AuctionLiveVideo {
                                             self.descriptionOfWinAndLoseView.isHidden = true
                                             
                                             self.plusMinusViewHeight.constant = 0
-                                            self.plusMinusView.isHidden = true
+                                            self.bidingActionView.isHidden = true
                                             
                                             self.addBidViewHeight.constant = 0
-                                            self.addBidView.isHidden = true
+                                            self.bidingActionView.isHidden = true
                                             
                                             self.sendRaiseHandViewHeight.constant = 0
                                             self.sendRaiseHandView.isHidden = true
@@ -196,10 +201,10 @@ extension AuctionLiveVideo {
                                             self.descriptionOfWinAndLoseView.isHidden = false
                                             
                                             self.plusMinusViewHeight.constant = 160
-                                            self.plusMinusView.isHidden = false
+                                            self.bidingActionView.isHidden = false
                                             
                                             self.addBidViewHeight.constant = 70
-                                            self.addBidView.isHidden = false
+                                            self.bidingActionView.isHidden = false
                                             
                                             self.sendRaiseHandViewHeight.constant = 90
                                             self.sendRaiseHandView.isHidden = false
@@ -399,8 +404,12 @@ extension AuctionLiveVideo {
                             if !self.iamConductor {
                                 for user in allUsers{
                                     if user.id == currentCunductor?.id {
-                                        self.bidingActionView.isHidden = false
-                                        self.bidingAmountView.isHidden = false
+                                        
+                                       if self.totalTime > 0 {
+                                           self.bidingActionView.isHidden = false
+                                           self.bidingActionView.isHidden = false
+                                        }
+                                        
                                         break
                                     }else{
 //                                        self.bidingActionView.isHidden = true

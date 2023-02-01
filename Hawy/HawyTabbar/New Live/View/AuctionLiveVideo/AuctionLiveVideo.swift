@@ -66,9 +66,9 @@ class AuctionLiveVideo: BaseViewViewController {
     @IBOutlet weak var descriptionOfWinAndLoseViewHeight: NSLayoutConstraint!
     @IBOutlet weak var descriptionOfWinAndLoseView: UIView!
     @IBOutlet weak var plusMinusViewHeight: NSLayoutConstraint!
-    @IBOutlet weak var plusMinusView: UIView!
+    @IBOutlet weak var BidingAmountView: UIView!
     @IBOutlet weak var addBidViewHeight: NSLayoutConstraint!
-    @IBOutlet weak var addBidView: UIView!
+   // @IBOutlet weak var addBidView: UIView!
     @IBOutlet weak var addBidButton: GradientButton!
     @IBOutlet weak var sendRaiseHandViewHeight: NSLayoutConstraint!
     @IBOutlet weak var sendRaiseHandView: UIView!
@@ -211,7 +211,7 @@ class AuctionLiveVideo: BaseViewViewController {
     var index3 = 3
     
     @IBOutlet weak var BidPriceStauesStaues: UIView!
-    @IBOutlet weak var bidingAmountView: UIView!
+  //  @IBOutlet weak var bidingAmountView: UIView!
     @IBOutlet weak var bidingActionView: UIView!
     
     var iamConductor = false

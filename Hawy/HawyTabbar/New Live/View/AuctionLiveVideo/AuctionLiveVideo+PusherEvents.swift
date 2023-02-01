@@ -147,7 +147,7 @@ extension AuctionLiveVideo : PusherDelegate {
                 }
                 self.getParticipants(id: auction_id)
                 self.bidingActionView.isHidden = true
-                self.bidingAmountView.isHidden = true
+                self.BidingAmountView.isHidden = true
             }
         })
     }

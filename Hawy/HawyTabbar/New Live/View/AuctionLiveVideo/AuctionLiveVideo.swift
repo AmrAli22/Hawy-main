@@ -278,7 +278,7 @@ class AuctionLiveVideo: BaseViewViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateTimer()
+       // updateTimer()
     }
     
     override func viewWillLayoutSubviews() {

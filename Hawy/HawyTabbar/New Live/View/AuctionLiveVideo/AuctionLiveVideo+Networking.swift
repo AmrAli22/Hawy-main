@@ -78,8 +78,10 @@ extension AuctionLiveVideo {
                             
                             let finalTimeStamp = (self.time ?? 0) - (self.currentTime ?? 0)
                             self.finalTotal = finalTimeStamp
-                            
-                            
+                            self.totalTime = self.finalTotal
+                            self.startOtpTimer()
+                            self.timerLabel.textColor = DesignSystem.Colors.PrimaryBlack.color
+                            self.clockImage.image = UIImage(systemName: "clock.fill")
                             
                             
                             for card in liveAuctionRequest.item?.cards ?? [] {
@@ -249,9 +251,7 @@ extension AuctionLiveVideo {
                             
                             self.listenToMicCall(auction_id: self.auctionID, card_id: self.cardID)
                             
-                            self.startOtpTimer()
-                            self.timerLabel.textColor = DesignSystem.Colors.PrimaryBlack.color
-                            self.clockImage.image = UIImage(systemName: "clock.fill")
+                           
                             
                             
                             if liveAuctionRequest.item?.bidCounter == 0 {
@@ -407,13 +407,17 @@ extension AuctionLiveVideo {
                                         
                                        if self.totalTime > 0 {
                                            self.bidingActionView.isHidden = false
-                                           self.bidingActionView.isHidden = false
+                                           self.BidingAmountView.isHidden = false
+                                           self.sendRaiseHandView.isHidden = false
+                                           self.controlButtons.isHidden = false
+                                           self.remoteVideoMutedIndicator.isHidden = false
                                         }
                                         
                                         break
                                     }else{
-//                                        self.bidingActionView.isHidden = true
-//                                        self.bidingAmountView.isHidden = true
+                                        self.bidingActionView.isHidden = true
+                                        self.BidingAmountView.isHidden = true
+                                        self.sendRaiseHandView.isHidden = true
                                     }
                                 }
                             }

@@ -32,59 +32,39 @@ extension AuctionLiveVideo {
             self.timerLabel.textColor = DesignSystem.Colors.PrimaryDarkRed.color
             self.clockImage.image = UIImage(named: "asset-2")
             self.timer2?.invalidate()
-            self.plusButtonOutlet.isEnabled = false
-            self.minusButtonOutlet.isEnabled = false
-            self.addBidButton.isEnabled = false
-            self.sendRaiseHandButton.isEnabled = false
+//            self.plusButtonOutlet.isEnabled = false
+//            self.minusButtonOutlet.isEnabled = false
+//            self.addBidButton.isEnabled = false
+//            self.sendRaiseHandButton.isEnabled = false
+//            self.controlButtons.isHidden = true
+//            self.remoteVideoMutedIndicator.isHidden = false
             
-            self.controlButtons.isHidden = true
-            //self.localVideoMutedBg.isHidden = false
-            self.remoteVideoMutedIndicator.isHidden = false
-            
-            if curretCard.offer?.userID == HelperConstant.getUserId() {
-                if !iamConductor {
-                    winnigView.isHidden = false
-                    
-                    auctionFinalBidingStatues.isHidden = false
-                    auctionFInalBidingStatuesLabel.backgroundColor = hexStringToUIColor(hex: "#51A14F") //hexStringToUIColor: "51A14F" //51A14F
-                    auctionFInalBidingStatuesLabel.textColor  = .white
-                    auctionFInalBidingStatuesLabel.text       =  "Gongr".localized
-                    BidPriceStauesStaues.isHidden = false
-                    bidingAmountView.isHidden = true
-                    bidingActionView.isHidden = true
-                    
-                    
-                }else{
-                    self.bidingActionView.isHidden = true
-                    self.bidingAmountView.isHidden = true
-
-                    auctionFinalBidingStatues.isHidden = false
-                    auctionFInalBidingStatuesLabel.backgroundColor = .orange
-                    auctionFInalBidingStatuesLabel.textColor  =  .red
-                    auctionFInalBidingStatuesLabel.text       =  "AuctionEnded".localized
-                    
-                }
-                
-                
-
-            }else{
-                
-                bidingAmountView.isHidden = true
-                bidingActionView.isHidden = true
-                sendRaiseHandView.isHidden = true
-                auctionFinalBidingStatues.isHidden = false
-                auctionFInalBidingStatuesLabel.backgroundColor = hexStringToUIColor(hex: "#51A14F")
-                auctionFInalBidingStatuesLabel.textColor  = .white
-                auctionFInalBidingStatuesLabel.text       =  "BackHome".localized
+            if iamConductor {
                 winnigView.isHidden = true
-                BidPriceStauesStaues.isHidden = true
+                self.bidingActionView.isHidden = true
+                               self.BidingAmountView.isHidden = true
+
+                               auctionFinalBidingStatues.isHidden = false
+                               auctionFInalBidingStatuesLabel.backgroundColor = .orange
+                               auctionFInalBidingStatuesLabel.textColor  =  .red
+                               auctionFInalBidingStatuesLabel.text       =  "AuctionEnded".localized
+                
+                
+                VideoStatues = false
+                controlButtons.isHidden = true
                 
             }
             
-            VideoStatues = false
             
-            bidingAmountView.isHidden = true
-            bidingActionView.isHidden = true
+            
+//            if curretCard.offer?.userID == HelperConstant.getUserId() {
+//                if !iamConductor {
+//                    winnigView.isHidden = false
+//                }else{
+//                    self.bidingActionView.isHidden = true
+//                    self.BidingAmountView.isHidden = true
+//                }
+ //           }
             
         }else if self.totalTime <= 3600 {
             

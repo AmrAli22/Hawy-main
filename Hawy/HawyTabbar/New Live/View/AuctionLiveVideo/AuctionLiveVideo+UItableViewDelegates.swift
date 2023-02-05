@@ -223,6 +223,8 @@ extension AuctionLiveVideo : UITableViewDelegate , UITableViewDataSource {
             
             if ( (self.cards[section].conductedBy == "me") || (self.cards[section].conductedBy == "admin") ) && (self.cards[section].conductor?.id == HelperConstant.getUserId()) {
                 
+            
+                
                 self.handleExpandClose(button: tag, idOfCard: self.cards[section].id ?? 0)
                 
             }else{

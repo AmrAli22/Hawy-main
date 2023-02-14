@@ -239,8 +239,8 @@ class RegisterViewController: BaseViewViewController, UITextFieldDelegate {
             if result?.code == 200 {
                 let stroyboard = UIStoryboard(name: "Authentication", bundle: nil)
                 let VC = stroyboard.instantiateViewController(withIdentifier: "VeificationViewController") as? VeificationViewController
-                VC?.phone = (self.countryCode ?? "") + (self.phoneTF.text ?? "")
-                VC?.countryCode = self.countyCodeTF.text
+                VC?.phone = (self.phoneTF.text ?? "")
+                VC?.countryCode = self.countryCode //solve
                 VC?.isoCode = self.isoCode
                 VC?.homeOrNot = false
                 self.navigationController?.pushViewController(VC!, animated: true)
@@ -294,8 +294,10 @@ class RegisterViewController: BaseViewViewController, UITextFieldDelegate {
             ToastManager.shared.showError(message: "Please, Enter your phone".localized, view: self.view)
             return
         }
-        // check and guard for PhoneTF is Valid
-        let fullPhone = (countryCode ?? "") + (phoneTF.text ?? "")
+     
+    // check and guard for PhoneTF is Valid
+        let fullPhone = (countryCode ?? "") + (phoneTF.text ?? "")        
+        
         guard fullPhone.replacedArabicDigitsWithEnglish.isValidPhone == true else {
             ToastManager.shared.showError(message: "Please, Enter a valid phone number".localized, view: self.view)
             return
@@ -358,6 +360,7 @@ extension RegisterViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         countyCodeTF.text = "\(list[row].flag ?? "") \( list[row].extensionCode ?? "")"
         isoCode = list[row].countryCode ?? ""
         countryCode = "+" + "\(list[row].extensionCode ?? "")"
+        
     }
     
 }

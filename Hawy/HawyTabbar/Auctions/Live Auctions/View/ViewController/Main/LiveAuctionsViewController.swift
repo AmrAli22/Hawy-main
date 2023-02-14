@@ -207,7 +207,8 @@ extension LiveAuctionsViewController {
                     self.auctionData = productResponse.item ?? []
                     
                     if self.auctionData.isEmpty == true {
-                        self.emptyView.isHidden = false
+                        
+                   //     self.emptyView.isHidden = false
                     }else {
                         self.emptyView.isHidden = true
                     }
@@ -216,7 +217,8 @@ extension LiveAuctionsViewController {
                     
                 }
                 self.hideIndecator()
-            } catch {
+            } catch let error{
+                print("error\(error)")
                 self.hideIndecator()
                 // self.NoInternetConnectionMessage()
             }
@@ -267,7 +269,8 @@ extension LiveAuctionsViewController {
                     self.auctionData = productResponse.item ?? []
                     
                     if self.auctionData.isEmpty == true {
-                        self.emptyView.isHidden = false
+                        
+                    //    self.emptyView.isHidden = false
                     }else {
                         self.emptyView.isHidden = true
                     }
@@ -276,7 +279,8 @@ extension LiveAuctionsViewController {
                     
                 }
                 self.hideIndecator()
-            } catch {
+            } catch let error{
+                print("error\(error)")
                 self.hideIndecator()
                 // self.NoInternetConnectionMessage()
             }

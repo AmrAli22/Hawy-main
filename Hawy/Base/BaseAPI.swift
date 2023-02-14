@@ -46,6 +46,11 @@ class BaseAPIService<T: TargetType> {
                 .validate(statusCode: 200...500)
                 .responseDecodable(of: M.self) { response in
                     
+                    print("CurrentUrlIS\(url)")
+                    print("CurrentUrlParams\(parameters.0)")
+                    print("CurrentUrlHeaders\(headers)")
+                    print("CurrentUrlResponse\(headers)")
+                    
                     switch response.result {
                         
                     case .success(let value):

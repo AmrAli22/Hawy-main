@@ -66,6 +66,7 @@ class OTPViewModel: OTPViewModelProtocol {
             self.loadinState.send(.loadStart)
             self.loadState.send(true)
             let registerApi: OTPAPIProtocol = OTPAPI()
+            
             registerApi.otp(mobile: mobile, otp: otp, countryCode: countryCode, isoCode: isoCode).sink { [weak self] (completion) in
                 guard let self = self else { return }
                 switch completion {
@@ -95,5 +96,4 @@ class OTPViewModel: OTPViewModelProtocol {
         return otp
         
     }
-    
 }

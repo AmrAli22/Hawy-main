@@ -380,6 +380,8 @@ class VeificationViewController: BaseViewViewController, UITextFieldDelegate {
         Task {
             do {
                 print(countryCode, phone, code, isoCode)
+                
+                
                 let otp = try await viewModel.sendOtp(mobile: phone, otp: code, countryCode: countryCode, isoCode: isoCode.lowercased())
                 print(otp)
             }catch {
